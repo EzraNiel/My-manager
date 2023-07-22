@@ -5,18 +5,51 @@
     height: 100%;
     top: 0;
 }
+.barnav{
+    background-color:white ;
+    border: 1px solid grey;
+    height: 35px;
+    position: absolute;
+    position: fixed;
+    
+}
 .glisseGauche{
+    border: 1px solid grey;
     position: absolute;
     width: 200px;
+    top: 35px;
     height: 100%;
     background-color: azure;
-    top: 3px;
+    position: fixed;
 }
 .content{
-    background-color: antiquewhite;
-    position: relative;
-    width: 84.5%;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
     overflow: hidden;
     height: 100%;
-    left: 205px;
+    left: 200px;
+    padding-left: 220px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+.navContent{
+    align-items: center;
+    
+}
+.fenetre{
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    height: 40px;
+    margin-left:20px;
+    background-color: #EDF058;
+    text-align: center;
+    
+}
+.divcontenu{
+    background-color: red;
+    margin-top: 5px;
+    padding: 10px;
+    height: 100%;
 }
