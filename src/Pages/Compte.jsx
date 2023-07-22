@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../Components/Steddi/Compte.css'
 
 function Compte() {
   // STATE (état,données)
@@ -7,12 +8,12 @@ function Compte() {
 
   //   AFFICHAGE (RENDER)
   return (
-    <>
-      <h1>Welcom "My manager"</h1>
-      <div className="Compte">
+    <div className="fond">
+    <h1>Welcom "My manager"</h1>
+      <div >
         <Link to="/">Acceuil</Link>
       </div>
-    </>
+    </div>
   );
 }
 
