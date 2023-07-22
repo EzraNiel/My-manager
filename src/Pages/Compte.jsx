@@ -9,10 +9,14 @@ function Compte() {
   //   AFFICHAGE (RENDER)
   return (
     <div className="fond">
-    <h1>Welcom "My manager"</h1>
-      <div >
-        <Link to="/">Acceuil</Link>
+      <div className="glisseGauche">
+        <ul>
+          <li><Link to="/">Acceuil</Link></li>
+          <li><Link to="/Apropos">A propos</Link></li>
+          <li><Link to="/Contact">Contact</Link></li>
+        </ul>
       </div>
+      <div className="content"></div>
     </div>
   );
 }
