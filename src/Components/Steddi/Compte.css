@@ -38,17 +38,17 @@
     
 }
 .fenetre{
-    border: 1px solid grey;
+    border: 0px solid grey;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 0px 1px 1px;
     height: 40px;
     margin-left:20px;
-    background-color: #EDF058;
+    background-color: #e9eb92;
     text-align: center;
     
 }
 .divcontenu{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     margin-top: 5px;
     padding: 10px;
     height: 100%;

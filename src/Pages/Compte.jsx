@@ -26,9 +26,9 @@ function Compte() {
       </div>
       <div className="content">
         <div className="navContent row">
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage1')} >Transations</button>
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage2')}>Catégories</button>
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage3')}>Rapports</button>
+          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage1')} >TRANSACTIONS</button>
+          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage2')}>CATEGORIES</button>
+          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage3')}>RAPPORTS</button>
         </div>
         <div className="divcontenu">
           {display=== 'affichage1' && <Transaction/>}

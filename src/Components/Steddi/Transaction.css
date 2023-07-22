@@ -1,0 +1,28 @@
+.firstDiv{
+    border: 1px 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 2px 2px;
+    border-radius: 5px;
+    width: 90%;
+    height: 300px;
+}
+.total{
+    text-align: center;
+    margin:20px 40px ;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px;
+}
+.total2{
+    text-align: center;
+    margin:0px 40px ;
+    height: 60px;
+    border-radius: 5px;
+    
+}
+.equilibre{
+    background-color: rgb(234, 236, 239);
+    margin: 0px 30px;
+    margin-bottom: 10px;
+    height: 165px;
+}
