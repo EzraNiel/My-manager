@@ -5,6 +5,7 @@
     border-radius: 5px;
     width: 70%;
     height: 275px;
+    transition: 1s;
 }
 .total{
     text-align: center;

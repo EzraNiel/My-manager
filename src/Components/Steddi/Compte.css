@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     top: 0;
+    transition: 1s;
 }
 .barnav{
     z-index: 100;
@@ -39,7 +40,7 @@
     align-items: center;
     
 }
-.fenetre{
+.fenetre1,.fenetre2,.fenetre3{
     border: 0px solid grey;
     border-radius: 10px;
     box-shadow: 0px 1px 1px;
@@ -49,11 +50,16 @@
     text-align: center;
     
 }
+.fenetre1:hover,.fenetre2:hover,.fenetre3:hover{
+    font-size: 20px;
+}
+
 .divcontenu{
     background-color: rgb(255, 255, 255);
     margin-top: 5px;
     padding: 10px;
     height: 100%;
+    transition: 1s;
     
 }
 .Calculatrice{
@@ -73,4 +79,29 @@
     width: 100%;
     background-color: black;
     height: 100px;
+}
+.Parametre{
+    height: 45px;
+    box-shadow: 1px 1px 1px;
+    background-color: #e9eb92;
+}
+.listUl{
+    margin-top: 0px;
+    list-style-type: none;
+}
+.listUl li{
+    
+    margin-left:-40px;
+    border: 1px solid grey;
+    padding: 15px 0px;
+}
+.list{
+    width: 200px;
+    color: black;
+}
+.list:hover{
+    font-size: 20px;
+}
+.listUl li:hover{
+    background-color: #c5c5a8;
 }

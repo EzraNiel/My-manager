@@ -19,17 +19,21 @@ function Compte() {
       
       <div className="container-fluid barnav">zavtra</div>
       <div className="glisseGauche">
-        <ul>
-          <li><Link to="/">Acceuil</Link></li>
-          <li><Link to="/Apropos">A propos</Link></li>
-          <li><Link to="/Contact">Contact</Link></li>
+        <div className="Parametre">
+          <h4>Parametre</h4>
+          <div></div>
+        </div>
+        <ul className="listUl">
+          <li><Link to="/"><div className="list">Acceuil</div></Link></li>
+          <li><Link to="/Apropos"><div className="list">A propos</div></Link></li>
+          <li><Link to="/Connexion"><div className="list">Deconnexion</div></Link></li>
         </ul>
       </div>
       <div className="content">
         <div className="navContent row">
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage1')} >TRANSACTIONS</button>
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage2')}>CATEGORIES</button>
-          <button className="fenetre col-md-3 " onClick={()=>handleButtonClick('affichage3')}>RAPPORTS</button>
+          <button className="fenetre1 col-md-3 " onClick={()=>handleButtonClick('affichage1')} >TRANSACTIONS</button>
+          <button className="fenetre2 col-md-3 " onClick={()=>handleButtonClick('affichage2')}>CATEGORIES</button>
+          <button className="fenetre3 col-md-3 " onClick={()=>handleButtonClick('affichage3')}>RAPPORTS</button>
         </div>
         <div className="divcontenu">
           {display=== 'affichage1' && <Transaction/>}
