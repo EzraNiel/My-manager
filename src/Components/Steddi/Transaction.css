@@ -3,26 +3,68 @@
     background-color: white;
     box-shadow: 0px 2px 2px;
     border-radius: 5px;
-    width: 90%;
-    height: 300px;
+    width: 80%;
+    height: 275px;
 }
 .total{
     text-align: center;
-    margin:20px 40px ;
+    margin:20px 35px ;
     height: 60px;
     border-radius: 5px;
     box-shadow: 0px 1px 1px;
 }
 .total2{
     text-align: center;
-    margin:0px 40px ;
+    margin:0px 30px ;
     height: 60px;
     border-radius: 5px;
     
 }
 .equilibre{
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(245, 247, 249);
     margin: 0px 30px;
     margin-bottom: 10px;
     height: 165px;
+}
+.informations{
+    margin-top: 20px;
+    border: 1px 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 1px 1px 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+}
+.barNavInfo{
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: rgb(255, 252, 249);
+    height: 40px;
+    box-shadow: 1px 1px 1px;
+}
+.Element{
+    border: 0.1px solid grey;
+    /* padding: 5px; */
+    margin: 10px;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.4px 0.4px 0.4px;
+}
+.ElementBar{
+    border: 0px solid grey;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgb(245, 247, 249);
+    box-shadow: 1px 1px 1px;
+}
+.ElementContenu{
+    padding: 5px;
+}
+.ElementDetails{
+    border: 1px solid grey;
+    margin-left: 0;
+    width: 100%;
+    color: rgb(82, 82, 82);
+    background-color: rgb(255, 253, 196);
 }

@@ -16,6 +16,7 @@ function Compte() {
   //   AFFICHAGE (RENDER)
   return (
     <div className="fond">
+      <div className="Calculatrice"><h1>$</h1></div>
       <div className="container-fluid barnav">zavtra</div>
       <div className="glisseGauche">
         <ul>
@@ -36,6 +37,7 @@ function Compte() {
           {display==='affichage3' && <Rapport/>}
         </div>
       </div>
+      <div className="footer"></div>
     </div>
   );
 }
