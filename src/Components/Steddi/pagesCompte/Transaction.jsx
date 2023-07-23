@@ -12,9 +12,10 @@ function ElementInfo(val,libelle){
             <div className='col-md-8'>
                 <h5>{libelle}</h5>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-3'>
                 <h5 className={nature}>{val}</h5>
             </div>
+            <div className="col-md-1"><button className='supp'>X</button></div>
         </div>
     )
 }
@@ -22,7 +23,15 @@ function Info(val,libelle,val1,libelle1){
     let valTotal1=0
     let valTotal2=0
     if ((val>0 && val1>0) || (val<0 && val1<0)){
-        valTotal1=valTotal2= val+val1
+        if(val<0){
+            valTotal1=0
+            valTotal2= val+val1
+        }
+        else{
+            valTotal1=val+val1
+            valTotal2=0
+        }
+        
     }
     else{
         if((val>0) && (val1<0)){
