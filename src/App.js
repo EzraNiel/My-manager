@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Acceuil from "./Pages/Acceuil";
 import Apropos from "./Pages/Apropos";
 import Contact from "./Pages/Contact";
-import Creation from "./Pages/Creation";
+import Creation from "./Components/Tsanta/Creation";
 import Connexion from "./Pages/Connexion";
 import Compte from "./Pages/Compte";
 
