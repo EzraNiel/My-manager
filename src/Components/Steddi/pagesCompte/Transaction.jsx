@@ -1,6 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../Transaction.css'
 import React from 'react'
+import porte from '../iconSte/porte.png'
+import image from '../iconSte/logo1.png'
+import revenu from '../iconSte/img-revenu.png'
+import depense from '../iconSte/img-revenu(2).png'
 function ElementInfo(val,libelle){
     let nature='Revenu'
     if(val<0){
@@ -62,12 +66,14 @@ function Transaction(){
             <div className='firstDiv'>
                 <div className='row'>
                     <div className="total col-md-5">
-                        <h5>Solde totale portefeuille</h5>  
+                        <div className='iconTotal'><img src={porte} alt="" /></div>
+                        <h5 className='TotalLibelle'>Solde totale portefeuille</h5> 
                         <h4>20.000.000$</h4>
 
                     </div>
                     <div className="total col-md-5">
-                        <h5>Solde totale banque</h5>
+                        <div className='iconTotal'><img src={image} alt="" /></div>
+                        <h5 className='TotalLibelle'>Solde totale banque</h5>
                         <h4>156.000.000$</h4>
                     </div>
                 </div>
@@ -75,23 +81,25 @@ function Transaction(){
                 <div className='equilibre'>
                     <div className="row">
                         <div className="total2 col-md-5">
+                                <div className='iconRevDep'><img src={revenu} alt="" /></div>
                                 <h5>Revenus</h5>  
-                                <h4 className='Revenu'>300.000$</h4>
+                                <h4 className='Revenu1'>300.000$</h4>
 
                             </div>
                             <div className="total2 col-md-5">
+                                <div className='iconRevDep'><img src={depense} alt="" /></div>
                                 <h5 >Depenses</h5>
-                                <h4 className='Depense'>150.000$</h4>
+                                <h4 className='Depense1'>150.000$</h4>
                             </div>
                     </div>
                     <hr />
                     <div className="row">
-                        <div className="total2 col-md-5">
+                        <div className="total3 col-md-5">
                                 <h5>Point final</h5>  
                                 <h4>Date</h4>
 
                             </div>
-                            <div className="total2 col-md-5">
+                            <div className="total3 col-md-5">
                                 <h5>Equilibre</h5>
                                 <h4>150.000$</h4>
                             </div>
@@ -100,9 +108,10 @@ function Transaction(){
             </div>
             <div className="informations">
                 <div className="barNavInfo"><h5>Informations</h5></div>
-                <div>
+                <div className='scrolleo'>
                     {Info(-500,'Transport',-20,'Achat')}
                     {Info(2500,'Cadeau',-30,'taxi')}
+                    {Info(-26,'Sakafo',-50,'sigara')}
                     {Info(-26,'Sakafo',-50,'sigara')}
                 </div>
             </div>
