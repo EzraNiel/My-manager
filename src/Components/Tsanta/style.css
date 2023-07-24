@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-   
   }
  
   .container {
@@ -25,7 +24,6 @@
     flex-basis: 35%;
     padding: 20px;
     height: 100%;
-  
   }
   
 .content-left {
@@ -170,7 +168,7 @@
     margin-left: 10px;
     
 }
-.connexion {
+.connexion, .creer {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;

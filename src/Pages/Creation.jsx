@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import './style.css';
-import GroupImage from './img/Group.png'
+import '../Components/Tsanta/style.css';
+import GroupImage from '../Components/Tsanta/img/Group.png'
 import { useState } from "react";
 function Creation() {
   // state
@@ -35,8 +35,7 @@ function Creation() {
           <p>Pour continuer, créer votre compte ici</p>
           <div className="img"> 
             <img src={GroupImage} alt="Groupe" />
-          </div>
-          
+          </div>          
         </div>
         <div className="content-right">
           <div className="cercle1"></div>
@@ -67,7 +66,9 @@ function Creation() {
                     <input type="password" id="ConfirmMdp" value={confirmMotDePasse} onChange={(e) => setconfirmMotDePasse(e.target.value)} className="ConfirmMdp" placeholder=" " />
                     <label htmlFor="ConfirmMdp">Confirmer le mot de passe</label>
                   </div>
-                  <button className="creer">Créer</button>
+                  <Link to="/">
+                    <button className="creer">Créer</button>
+                  </Link>                  
                   <p>Le mot de passe doit contenir au moins 8 caractères</p>
                   <div className="line-container">
                     <hr className="line short" />
@@ -83,11 +84,6 @@ function Creation() {
               </form>
               </div>
           </div>
-      </div>
-      <h2>S'inscrire</h2>
-      <div className="Creation">
-        <Link to="/">Accueil</Link>
-        {/* <Link to="/Connexion">Connexion</Link> */}
       </div>
     </>
   );
