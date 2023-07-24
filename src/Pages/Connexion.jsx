@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Formulaire } from "../Components/Fitia/Formulaire";
 function Connexion() {
   // STATE (état,données)
 
@@ -14,6 +14,8 @@ function Connexion() {
         <Link to="/Creation">S'inscrire</Link>
         <Link to="/Compte">Confirmer</Link>
       </div>
+      
+      <Formulaire/>
     </>
   );
 }
