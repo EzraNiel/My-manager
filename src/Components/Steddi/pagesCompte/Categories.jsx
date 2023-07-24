@@ -1,9 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
+import '../Categorie.css'
+import cat from '../imgCat/cat1.png'
 function Categories(){
     return(
         <div>
-            <h1>Categorie baina ah</h1>
+            <div className='catDiv'>
+                <img src={cat} alt="" />
+            </div>
         </div>
     )
 }

@@ -67,23 +67,37 @@
     height: 40px;
     box-shadow: 1px 1px 1px;
 }
+.barNavInfo h5{
+    font-size: 20px;
+    font-weight: 600;
+}
 .Element{
     border: 0.1px solid grey;
     margin: 10px;
     width: 98%;
+    border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0.4px 0.4px 0.4px;
 }
 .ElementBar{
     border: 0px solid grey;
     margin-left: 0;
     width: 100%;
     background-color: rgb(245, 247, 249);
-    box-shadow: 1px 1px 1px;
+    box-shadow: 1px 1px 1px;   
+}
+.ElementBar h4{
+    font-size: 20px;
+    font-weight: 400;
 }
 .ElementContenu{
     padding: 2px;
 }
+.ElementContenu h5{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .ElementDetails{
     border: 1px solid grey;
     margin-left: 0;
@@ -172,4 +186,60 @@
     height: 60px;
     border-radius: 5px;
     
+}
+.Rapport{
+    /* background-color: rgb(247, 23, 23); */
+    padding: 10px;
+    height: 100%;
+    transition: 0.5s;
+    
+}
+.imgRapportRevenu1{
+    margin-top: 10px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu1 img{
+    width: 100%;
+}
+.imgRapportRevenu2{
+    margin-top: -15px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu2 img{
+    width: 100%;
+}
+.imgRapportRevenu3{
+    margin-top: -3px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu3 img{
+    width: 100%;
+}
+.dep2{
+    margin-top: 0px;
+}
+.dep3{
+    margin-top: 0px;
+}
+.btnRevenu, .btnDepense{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 398px;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 1px grey;
+}
+.btnDepense{
+    margin-left: 2px;
+}
+.btnRevenu:hover, .btnDepense:hover{
+    color: #EEB000;
+    box-shadow: 1px 2px 1px #EEB000;
+    
+    font-size:20px;
 }
