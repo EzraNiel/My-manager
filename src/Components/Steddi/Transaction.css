@@ -1,0 +1,175 @@
+.firstDiv{
+    border: 1px 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 1px 1px;
+    border-radius: 5px;
+    width: 70%;
+    height: 275px;
+    transition: 1s;
+}
+.total{
+    text-align: center;
+    margin:20px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px;
+}
+.total h5{
+    font-size: 20px;
+}
+.total h4{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.total2{
+    text-align: center;
+    margin:0px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    
+}
+.equilibre{
+    background-color: rgb(245, 247, 249);
+    /* margin: 0px 0px; */
+    margin-bottom: 10px;
+    height: 165px;
+}
+
+.informations{
+    margin-top: 20px;
+    border: 1px 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 1px 1px 1px;
+    border-radius: 20px;
+    width: 70%;
+    height: 520px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    
+}
+.scrolleo{
+    margin-top: 2px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 490px;
+    overflow: auto;
+    scrollbar-color: rgb(255, 244, 148) rgb(255, 255, 255);
+}
+.scrolleo::-webkit-scrollbar {
+    width: 5px; /* Largeur de la scrollbar */
+}
+.barNavInfo{
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: rgb(255, 252, 249);
+    height: 40px;
+    box-shadow: 1px 1px 1px;
+}
+.Element{
+    border: 0.1px solid grey;
+    margin: 10px;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.4px 0.4px 0.4px;
+}
+.ElementBar{
+    border: 0px solid grey;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgb(245, 247, 249);
+    box-shadow: 1px 1px 1px;
+}
+.ElementContenu{
+    padding: 2px;
+}
+.ElementDetails{
+    border: 1px solid grey;
+    margin-left: 0;
+    width: 100%;
+    color: rgb(82, 82, 82);
+    background-color: #fff78b;
+}
+.AjoutElement{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0.5px;
+    background: rgb(255, 255, 255);
+    height: 500px;
+    width: 250px;
+}
+.Revenu {
+    color: green;
+}
+.Revenu1{
+    font-family:'Courier New', Courier, monospace;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.Depense{
+    color: red;
+    
+}
+.Depense1{
+    font-family:'Courier New', Courier, monospace;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -20px
+}
+.supp{
+    background-color: rgb(151, 62, 62);
+    color: white;
+    padding-top: 2px;
+    margin-top: 1px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+}
+.iconTotal{
+    width: 40px;
+    height: 35px;
+    margin-left: -5px;
+    overflow: hidden;
+}
+.iconTotal img{
+    width: 100%;
+    height: 100%;
+}
+.TotalLibelle{
+    margin-top: -35px;
+    margin-left: 20px;
+}
+.total2 h5{
+    font-weight: 600;
+    margin-left: 60px;
+    margin-bottom: 25px;
+    margin-top: -30px;
+    width: 100px;
+   
+}
+.iconRevDep{
+    margin-top: 5px;
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+    
+}
+.iconRevDep img{
+    width: 100%;
+    height: 100%;
+}
+.total3{
+    text-align: center;
+    margin:0px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    
+}
