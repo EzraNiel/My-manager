@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import Bar_de_navigation from "../Components/Ezra/Bar_de_navigation";
+import Footer from "../Components/Ezra/Footer";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -16,7 +17,7 @@ function Acceuil() {
       <Bar_de_navigation></Bar_de_navigation>
       <div className="grid-container">
         <div className="containt">
-          <h6>My Manager</h6>
+          <h4>My Manager</h4>
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
@@ -30,6 +31,7 @@ function Acceuil() {
             nstitu <span>S</span>upérieur <span>P</span>
             olytechniquue de <span>M</span>adagascar)
           </p>
+          <br />
           <p>
             <Link role="button" class="btn btn-warning btn-lg" to="/Apropos">
               Détail
@@ -55,6 +57,10 @@ function Acceuil() {
         />
       </div>
       <span className="circle1"></span>
+      <span className="circle2"></span>
+      <span className="circle3"></span>
+      <span className="circle4"></span>
+      {/* <Footer></Footer> */}
       {/* <span className="circle2"></span> */}
 
       {/* <div className="Acceuil">
