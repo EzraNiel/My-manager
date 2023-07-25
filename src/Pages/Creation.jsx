@@ -32,7 +32,7 @@ function Creation() {
   
   return (
     <>
-      <div className="container">
+      <div className="container1">
         <div className="content-left">
           <h1>My manager</h1>
           <p>Pour continuer, créer votre compte ici</p>
