@@ -118,12 +118,13 @@
     font-weight: 600;
 }
 .listUl{
+    width: 100%;
     margin-top: 0px;
     list-style-type: none;
 }
 .listUl li{
     
-    margin-left:-40px;
+    /* margin-left: 0px; */
     border: 1px solid grey;
     padding: 15px 10px;
 }
