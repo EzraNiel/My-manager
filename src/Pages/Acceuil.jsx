@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import Bar_de_navigation from "../Components/Ezra/Bar_de_navigation";
+import Footer from "../Components/Ezra/Footer";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -16,12 +17,13 @@ function Acceuil() {
       <Bar_de_navigation></Bar_de_navigation>
       <div className="grid-container">
         <div className="containt">
-          <h6>My Manager</h6>
+          <h4>My Manager</h4>
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
-            Ceci est la tout première version de <span>My Manager</span>,un apk
-            web conçu pour vous aidez dans la gestion de vos budget et de vos
+            Ceci est la tout première version de{" "}
+            <span className="text_my_manager">My Manager</span>,un apk web conçu
+            pour vous aidez dans la gestion de vos budget et de vos
             finances.Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des
@@ -30,6 +32,7 @@ function Acceuil() {
             nstitu <span>S</span>upérieur <span>P</span>
             olytechniquue de <span>M</span>adagascar)
           </p>
+          <br />
           <p>
             <Link role="button" class="btn btn-warning btn-lg" to="/Apropos">
               Détail
@@ -55,6 +58,10 @@ function Acceuil() {
         />
       </div>
       <span className="circle1"></span>
+      <span className="circle2"></span>
+      <span className="circle3"></span>
+      <span className="circle4"></span>
+      {/* <Footer></Footer> */}
       {/* <span className="circle2"></span> */}
 
       {/* <div className="Acceuil">
