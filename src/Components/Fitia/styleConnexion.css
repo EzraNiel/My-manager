@@ -5,13 +5,13 @@
     align-content:center;
 }
 .container1{
-  width: 85%;
-  margin-left: 140px;
+  width: 150%;
+  margin-left: 250px;
 }
 .box-area{
     background-color: #EDF058;
     align-content:center;
-    max-width:95%;
+    max-width:100%;
     /* margin:0 10% 0 10%; */
      text-align:center;
 }
