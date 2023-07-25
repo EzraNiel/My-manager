@@ -16,8 +16,8 @@
 }
 .logo{
     overflow: hidden;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 30px;
     
 }
 .logo img{
@@ -30,7 +30,7 @@
     width: 250px;
     top: 35px;
     height: 100%;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     position: fixed;
 }
 .content{
@@ -38,7 +38,7 @@
     background-color: rgb(255, 255, 255);
     width: 100%;
     overflow: hidden;
-    height: 160%;
+    /* height: 200%; */
     left: 200px;
     padding-left: 270px;
     padding-top: 40px;
@@ -65,6 +65,7 @@
     text-align: center;
     display: inline;
     opacity: 0.9;
+    transition: 0.2s;
     
     
 }
@@ -83,14 +84,20 @@
 .Calculatrice{
     position: absolute;
     right: 3px;
-    top: 35px;
-    background-color: rgb(255, 200, 0);
+    top: 36px;
+    background-color: rgb(255, 235, 163);
     width: 50px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 1px 1px 1px;
     text-align: center;
-    position: fixed;
+    position: fixed;  
+    transition: 0.5s;
+}
+.Calculatrice:hover{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
 }
 .footer{
     margin-top: 50px;
@@ -99,19 +106,27 @@
     height: 100px;
 }
 .Parametre{
+    padding-top: 6px;
     height: 45px;
     box-shadow: 1px 1px 1px;
-    background-color: #e9eb92;
+    background-color: #EDF058;
+    opacity: 0.8;
+    
+}
+.Parametre h4{
+    font-size: 20px;
+    font-weight: 600;
 }
 .listUl{
+    width: 100%;
     margin-top: 0px;
     list-style-type: none;
 }
 .listUl li{
     
-    margin-left:-40px;
+    /* margin-left: 0px; */
     border: 1px solid grey;
-    padding: 15px 0px;
+    padding: 15px 10px;
 }
 .list{
     width: 200px;
@@ -121,7 +136,7 @@
     font-size: 20px;
 }
 .listUl li:hover{
-    background-color: #c5c5a8;
+    background-color: #deb850;
 }
 .logoCompte{
     overflow: hidden;

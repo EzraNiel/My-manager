@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 import Transaction from '../Components/Steddi/pagesCompte/Transaction';
 import Categories from '../Components/Steddi/pagesCompte/Categories';
 import Rapport from '../Components/Steddi/pagesCompte/Rapport';
-import image from '../Components/Steddi/iconSte/logo.png'
+import image from '../Assets/Image/Logo-MyManager-2.png'
 
 const images = {
   image1: require('../Components/Steddi/iconSte/trans.png'),
