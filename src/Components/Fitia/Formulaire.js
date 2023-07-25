@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './styleConnexion.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import img from './illustration.png';
@@ -9,7 +10,7 @@ export function Formulaire() {
   <>  
 
       {/* main container */}
-    <div className="container justify-content-center align-items-center">
+    <div className="container1 ">
         <div className="row border-5 shadow box-area">
     
                 {/* left box */}
@@ -40,7 +41,7 @@ export function Formulaire() {
                                 <span class="border"></span>
                                 </div>
                             
-                                <button type='submit' id="bout1" className="mb-3">Se connecter</button>
+                                <Link to="/Compte" ><button type='submit' id="bout1" >Se connecter</button></Link>
                                 
                                 <div className="line-container mb-4">
                                     <hr className="line short" />
@@ -48,7 +49,9 @@ export function Formulaire() {
                                     <hr className="line short" />
                                 </div>
 
-                                <button type='submit' id="bout2" className="mb-5">Créer un compte</button>
+                                <Link to="/Creation">
+                                <button type='submit' id="bout1" className="mb-5">Créer un compte  ☻</button>
+                                </Link>
                             
                         
                         </div>

@@ -4,7 +4,10 @@
     letter-spacing: 0.7px;
     align-content:center;
 }
-
+.container1{
+  width: 85%;
+  margin-left: 140px;
+}
 .box-area{
     background-color: #EDF058;
     align-content:center;
@@ -176,4 +179,7 @@ img{
     height:100%;
     left:0;
     right:30px;
+}
+#bout1{
+  width: 400px;
 }
