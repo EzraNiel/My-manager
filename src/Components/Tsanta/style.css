@@ -4,7 +4,7 @@
     padding: 0;
   }
  
-  .container {
+  .container1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@ input:hover{
     height: 100px;
     border-radius: 50%;
     background-color: #FFE600;
-    transform: translate(250%, -290%); 
+    transform: translate(270%, -290%); 
 }
 .cercle2{
     width: 50px;
