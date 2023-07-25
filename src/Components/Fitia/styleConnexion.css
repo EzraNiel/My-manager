@@ -2,13 +2,19 @@
     margin:0;
     box-sizing: border-box;
     letter-spacing: 0.7px;
+    align-content:center;
 }
+
 .box-area{
-    /* align-items: center; */
     background-color: #EDF058;
+    align-content:center;
+    max-width:95%;
+    /* margin:0 10% 0 10%; */
+     text-align:center;
 }
 #box-left{
-    padding:10%;
+    padding:7% 10% 10% 10%;
+    width:63%;
     background-color: white;
     border-radius:0 90px 90px 0;
     align-items: center;
@@ -17,35 +23,55 @@
     justify-content:space-around;
     position: relative;
 }
-.form{
-    width:60%;
-    height:850px;
-    background-color:white;
-    display:inline-block;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content:space-around;
+form{
+  width:87%;
+  height:100%;
 }
-.email,.mdp{
-    background-color: rgba(236, 236, 236, 0.315);
-    width:90%;
-    height: 43px;
-    align-items: center;
-    display:inline-block;
-    flex-direction: column;
-    justify-content:space-around;
+form h3{
+  font-family:Arial;
+  font-weight: bold;
+}
+input{ 
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  width: 90%;
+  align-items: center;
+  display:inline-block;
+  flex-direction: column;
+  justify-content:space-around;
+  position: relative;
+}
+.input-group {
     position: relative;
-    border:1px solid rgba(51, 51, 46, 0.692);
-    border-radius:7px;
-}
-.soratra1{
-    align-items: center;
-    display:inline-block;
-    flex-direction: column;
-    justify-content:space-around;
-    position: relative;
-}
+    margin: 1.5rem 0;
+  }
+  
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+.effect-3 {
+    border-bottom: 2px solid rgba(185, 185, 185, 0.342);
+    padding-left: 0;
+  }
+  
+  .effect-3 + .border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 90%;
+    height: 2.5px;
+    transition: 0.5s;
+  }
+  
+  .effect-3:focus + .border {
+    background-color: rgb(246, 250, 0);
+    transform: translateX(-55%) scale(1);
+  }
+  
 #bout1{
     background-color:#EDF058;
     border:1.5px solid #EDF058;
@@ -56,20 +82,7 @@
     cursor: pointer;
     
 }
-.tsipika1{
-    width:30%;
-    height:50px ;
-}
-.tsipika2{
-    width:30%;
-    height:50px ;
-}
-#ou{
-    flex-direction: column;
-    width:90%;
-    height:50px ;
-}
-#bout2{
+#bout2{ 
     border: none;
     background-color:rgba(238, 238, 238, 0.123);;
     border:1.5px solid #EDF058;
@@ -92,44 +105,53 @@
     height:40px ;
     text-align: center;
     cursor: pointer;
+    transition:2s;
 }
-#rond1{
-    background-color: #EDF058;
-    width:100px;
-    height: 100px;
-    border-radius:0 150px 0 0;
-
-}
-#rond2{
-    background-color: #EDF058;
-    width:50px;
-    height: 50px;
-    border-radius:50px;
-    z-index: -1;
-}
-input{
+.line-container {
+    display: flex;
     align-items: center;
-    display:inline-block;
-    flex-direction: column;
-    justify-content:space-around;
-    position: relative;
-}
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(165, 165, 165, 0.205);
+  }
+  
+  .short {
+    width:176px;
+  }
 
-form{
-    height:100%;
+.ROND{
+    width:20%;
+    height:20%;
+    overflow: hidden;
+    /* background-color: red; */
+    position:absolute;
+    bottom:0;
+    left:0;
 }
-form h3{
-    font-family:Arial;
-    font-weight: bold;
+.rond1{
+    width:70%;
+    height:70%;
+    background-color: #EBF058;
+    border-radius:0 100% 0 0;
+    position:absolute;
+    bottom:0;
+
 }
-.lesInputs{
-    display:inline;
-    justify-content:space-around;
-    text-align: center;
+.rond2{
+  width:40%;
+  height:40%;
+  border-radius:50% 50% 50% 50%;
+  background-color: #EBF058;
+  position:absolute;
+  top:0;
+  right:0;
 }
 .right-box{
-    padding:10%;
-    width:40%;
+    padding:7% 2% 7% 2%;
+    width:37%;
     height: 550px;
     display:inline-block;
     justify-content:center;
@@ -140,4 +162,18 @@ p{
     font-family:'Jacques Francois';
     position:relative;
     text-align: center;
+}
+#illustration{
+     overflow: hidden;
+     width:420px; height:320px;
+     /* background-color: red; */
+     position:absolute;
+     align-items:center;
+     right: 17%;
+}
+img{
+    width:100%;
+    height:100%;
+    left:0;
+    right:30px;
 }
