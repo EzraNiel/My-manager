@@ -21,8 +21,9 @@ function Acceuil() {
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
-            Ceci est la tout première version de <span>My Manager</span>,un apk
-            web conçu pour vous aidez dans la gestion de vos budget et de vos
+            Ceci est la tout première version de{" "}
+            <span className="text_my_manager">My Manager</span>,un apk web conçu
+            pour vous aidez dans la gestion de vos budget et de vos
             finances.Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des

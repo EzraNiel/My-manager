@@ -1,6 +1,10 @@
 span {
   font-family: "Times New Roman", Times, serif;
   font-weight: 900;
+  color: green;
+}
+.text_my_manager {
+  color: black;
 }
 h4 {
   color: #ffc107;
