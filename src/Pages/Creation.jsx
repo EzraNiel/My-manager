@@ -19,6 +19,9 @@ function Creation() {
     console.log('Identification:', mail);
     console.log('Mot de passe:', motDePasse);
     console.log('Confirmation de mot de pase:', confirmMotDePasse);
+    if(motDePasse !== confirmMotDePasse){
+      alert("diso")
+    }
 // affichage (render)
     setNom('');
     setPrenom('');
