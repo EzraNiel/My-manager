@@ -12,32 +12,41 @@ function Bar_de_navigation() {
           <img
             alt=""
             src={img}
-            width="200"
-            height="90"
-            className="d-inline-block align-top"
+            width="50"
+            height="50"
+            // className="d-inline-block align-top"
           />{" "}
-          My Manager
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
           <Nav className="me-auto col-lg-5" navbarScroll>
-            <Nav.Link as={Link} to="/Apropos">
+            <Nav.Link as={Link} to="/Apropos" className="hover-effect-3">
               A propos
             </Nav.Link>
-            <Nav.Link as={Link} to="/Contact">
+            <Nav.Link as={Link} to="/Contact" className="hover-effect-3">
               Contact
             </Nav.Link>
           </Nav>
-          <div className="btn_style">
-            <Button variant="outline-secondary" as={Link} to="/Connexion">
-              Sign In
-            </Button>
-          </div>
-          <div className="btn_style">
-            <Button variant="outline-primary" as={Link} to="/Creation">
-              Sign Up
-            </Button>
-          </div>
+          {/* <div className="btn_style"> */}
+          <Button
+            variant="outline-secondary"
+            as={Link}
+            to="/Connexion"
+            className="btn_style"
+          >
+            Sign In
+          </Button>
+          {/* </div> */}
+          {/* <div className="btn_style"> */}
+          <Button
+            variant="outline-primary"
+            as={Link}
+            to="/Creation"
+            className="btn_style"
+          >
+            Sign Up
+          </Button>
+          {/* </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
