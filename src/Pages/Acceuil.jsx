@@ -1,17 +1,11 @@
 // import { Link } from "react-router-dom";
 import Bar_de_navigation from "../Components/Ezra/Bar_de_navigation";
-import Footer from "../Components/Ezra/Footer";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
 import "../Style/Acceuil.css";
 
 function Acceuil() {
-  // STATE (état,données)
-
-  // COMPORTEMENT
-
-  //   AFFICHAGE (RENDER)
   return (
     <>
       <Bar_de_navigation></Bar_de_navigation>
@@ -57,20 +51,10 @@ function Acceuil() {
           className="d-inline-block align-top"
         />
       </div>
-      <span className="circle1"></span>
-      <span className="circle2"></span>
+      {/* <span className="circle1"></span>
+      <span className="circle2"></span> */}
       <span className="circle3"></span>
       <span className="circle4"></span>
-      {/* <Footer></Footer> */}
-      {/* <span className="circle2"></span> */}
-
-      {/* <div className="Acceuil">
-        <Link to="/">Acceuil</Link>
-        <Link to="/Apropos">Apropos</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/Creation">S'inscrire</Link>
-        <Link to="/Connexion">Connecter</Link>
-      </div> */}
     </>
   );
 }
