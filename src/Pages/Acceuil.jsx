@@ -16,7 +16,7 @@ function Acceuil() {
       <Bar_de_navigation></Bar_de_navigation>
       <div className="grid-container">
         <div className="containt">
-          <h6>My Manager</h6>
+         <h6>My Manager</h6>
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
