@@ -5,13 +5,14 @@
     align-content:center;
 }
 .container1{
-  width: 150%;
-  margin-left: 250px;
+  width: 100%;
+  height: 600px;
 }
 .box-area{
-    background-color: #EDF058;
+    background-color: #FFE600;
     align-content:center;
     max-width:100%;
+    height: 100%;
     /* margin:0 10% 0 10%; */
      text-align:center;
 }
@@ -25,9 +26,10 @@
     flex-direction: column;
     justify-content:space-around;
     position: relative;
+    height: 100%;
 }
 form{
-  width:87%;
+  width:100%;
   height:100%;
 }
 form h3{
@@ -58,6 +60,9 @@ input{
 .effect-3 {
     border-bottom: 2px solid rgba(185, 185, 185, 0.342);
     padding-left: 0;
+    height: 35px;
+    width: 400px;
+
   }
   
   .effect-3 + .border {
@@ -76,8 +81,8 @@ input{
   }
   
 #bout1{
-    background-color:#EDF058;
-    border:1.5px solid #EDF058;
+    background-color:#FFE600;
+    border:1.5px solid #FFE600;
     border-radius:10px;
     width:90%;
     height:43px ;
@@ -88,9 +93,9 @@ input{
 #bout2{ 
     border: none;
     background-color:rgba(238, 238, 238, 0.123);;
-    border:1.5px solid #EDF058;
+    border:1.5px solid #FFE600;
     border-radius:10px;
-    color:#EDF058;
+    color:#FFE600;
     box-shadow:1px rgba(51, 51, 46, 0.692);
     font-weight: bold;
     width:90%;
@@ -99,7 +104,7 @@ input{
     cursor: pointer;
 }
 #bout2:hover{
-    background-color:#EDF058;
+    background-color:#FFE600;
     border:1.5px solid white;
     border-radius:10px;
     color:white;
@@ -137,7 +142,7 @@ input{
 .rond1{
     width:70%;
     height:70%;
-    background-color: #EBF058;
+    background-color: #FFE600;
     border-radius:0 100% 0 0;
     position:absolute;
     bottom:0;
@@ -147,7 +152,7 @@ input{
   width:40%;
   height:40%;
   border-radius:50% 50% 50% 50%;
-  background-color: #EBF058;
+  background-color: #FFE600;
   position:absolute;
   top:0;
   right:0;
@@ -168,11 +173,11 @@ p{
 }
 #illustration{
      overflow: hidden;
-     width:420px; height:320px;
+     width:400px; height:300px;
      /* background-color: red; */
      position:absolute;
      align-items:center;
-     right: 17%;
+     right: 18%;
 }
 img{
     width:100%;
