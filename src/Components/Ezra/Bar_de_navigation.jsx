@@ -12,9 +12,9 @@ function Bar_de_navigation() {
           <img
             alt=""
             src={img}
-            width="100"
-            height="52"
-            className="d-inline-block align-top"
+            width="50"
+            height="50"
+            // className="d-inline-block align-top"
           />{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
