@@ -6,22 +6,22 @@ import image_acceuil from "../Assets/Image/Sary.jpg";
 import "../Style/Acceuil.css";
 
 function Acceuil() {
-  // STATE (état,données)
-
-  // COMPORTEMENT
-
-  //   AFFICHAGE (RENDER)
   return (
     <>
       <Bar_de_navigation></Bar_de_navigation>
       <div className="grid-container">
         <div className="containt">
+<<<<<<< HEAD
          <h6>My Manager</h6>
+=======
+          <h4>My Manager</h4>
+>>>>>>> b6975e931f78f83282355de3521919d872ae3692
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
-            Ceci est la tout première version de <span>My Manager</span>,un apk
-            web conçu pour vous aidez dans la gestion de vos budget et de vos
+            Ceci est la tout première version de{" "}
+            <span className="text_my_manager">My Manager</span>,un apk web conçu
+            pour vous aidez dans la gestion de vos budget et de vos
             finances.Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des
@@ -30,6 +30,7 @@ function Acceuil() {
             nstitu <span>S</span>upérieur <span>P</span>
             olytechniquue de <span>M</span>adagascar)
           </p>
+          <br />
           <p>
             <Link role="button" class="btn btn-warning btn-lg" to="/Apropos">
               Détail
@@ -54,16 +55,10 @@ function Acceuil() {
           className="d-inline-block align-top"
         />
       </div>
-      <span className="circle1"></span>
-      {/* <span className="circle2"></span> */}
-
-      {/* <div className="Acceuil">
-        <Link to="/">Acceuil</Link>
-        <Link to="/Apropos">Apropos</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/Creation">S'inscrire</Link>
-        <Link to="/Connexion">Connecter</Link>
-      </div> */}
+      {/* <span className="circle1"></span>
+      <span className="circle2"></span> */}
+      <span className="circle3"></span>
+      <span className="circle4"></span>
     </>
   );
 }
