@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import Bar_de_navigation from "../Components/Ezra/Bar_de_navigation";
+import BarDeNavigation from "../Components/Ezra/BarDeNavigation";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -8,7 +8,7 @@ import "../Style/Acceuil.css";
 function Acceuil() {
   return (
     <>
-      <Bar_de_navigation></Bar_de_navigation>
+      <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
           <h4>My Manager</h4>
