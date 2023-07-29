@@ -15,12 +15,12 @@ export function Formulaire() {
     
                 {/* left box */}
                 <div className=" d-flex left-box" id="box-left">
-                <form>
-                        <div className="row">
-                                <div className="header mb-2">
-                                    <h3> Se connecter à un compte</h3>
-                                </div>
-                                <div className="input-group mb-2">
+                    <form>
+                            <div className="row">
+                                    <div className="header mb-2">
+                                        <h3> Se connecter à un compte</h3>
+                                    </div>
+                                    <div className="input-group mb-2">
                                         <input
                                             type="email"
                                             name=""
@@ -29,37 +29,37 @@ export function Formulaire() {
                                             placeholder="Entrer votre email...."
                                         />
                                         <span class="border"></span>
-                                </div>
-                                <div className="input-group mb-5">
-                                    <input
-                                            type="password"
-                                            name=""
-                                            id=""
-                                            className="effect-3"
-                                            placeholder="Saisir votre mot de passe...."
-                                    />
-                                <span class="border"></span>
-                                </div>
-                            
-                                <Link to="/Compte" ><button type='submit' id="bout1" >Se connecter</button></Link>
+                                    </div>
+                                    <div className="input-group mb-5">
+                                        <input
+                                                type="password"
+                                                name=""
+                                                id=""
+                                                className="effect-3"
+                                                placeholder="Saisir votre mot de passe...."
+                                        />
+                                        <span class="border"></span>
+                                    </div>
                                 
-                                <div className="line-container mb-4">
-                                    <hr className="line short" />
-                                    <span>  ou </span>
-                                    <hr className="line short" />
-                                </div>
+                                    <Link to="/Compte" ><button type='submit' id="bout1" >Se connecter</button></Link>
+                                    
+                                    <div className="line-container mb-4">
+                                        <hr className="line short" />
+                                        <span>  ou </span>
+                                        <hr className="line short" />
+                                    </div>
 
-                                <Link to="/Creation">
-                                <button type='submit' id="bout1" className="mb-5">Créer un compte  ☻</button>
-                                </Link>
+                                    <Link to="/Creation">
+                                    <button type='submit' id="bout1" className="mb-5">Créer un compte  ☻</button>
+                                    </Link>
+                                
                             
-                        
-                        </div>
-                </form>  
-                <div className="ROND">
-                     <div className="rond1"></div>
-                     <div className="rond2"> </div>
-                </div>
+                            </div>
+                    </form>  
+                    <div className="ROND">
+                        <div className="rond1"></div>
+                        <div className="rond2"> </div>
+                    </div>
                 </div>
                 {/* right box */}
                 <div className="align-items-center flex-column mb-4 right-box">

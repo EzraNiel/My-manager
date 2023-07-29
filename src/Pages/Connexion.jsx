@@ -7,11 +7,7 @@ function Connexion() {
   //   AFFICHAGE (RENDER)
   return (
     <>
-      
-
-      <div className="Connexion">
-        
-        
+      <div className="Connexion">  
       </div>
       <Formulaire/>
      
