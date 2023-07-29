@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import Bar_de_navigation from "../Components/Ezra/Bar_de_navigation";
+import BarDeNavigation from "../Components/Ezra/BarDeNavigation";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -8,14 +8,18 @@ import "../Style/Acceuil.css";
 function Acceuil() {
   return (
     <>
-      <Bar_de_navigation></Bar_de_navigation>
+      <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
+<<<<<<< HEAD
 <<<<<<< HEAD
          <h6>My Manager</h6>
 =======
           <h4>My Manager</h4>
 >>>>>>> b6975e931f78f83282355de3521919d872ae3692
+=======
+          <h4>My Manager</h4>
+>>>>>>> 44557c9b4597698d145d6a6fdfddcdc32aed5bf0
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
