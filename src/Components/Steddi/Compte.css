@@ -107,9 +107,10 @@
 }
 .Parametre{
     padding-top: 6px;
+    padding-left: 10px;
     height: 45px;
     box-shadow: 1px 1px 1px;
-    background-color: #FFE600;
+    background-color: #000000;
     opacity: 0.8;
     
 }

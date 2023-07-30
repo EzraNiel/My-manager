@@ -11,15 +11,6 @@ function Acceuil() {
       <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
-<<<<<<< HEAD
-<<<<<<< HEAD
-         <h6>My Manager</h6>
-=======
-          <h4>My Manager</h4>
->>>>>>> b6975e931f78f83282355de3521919d872ae3692
-=======
-          <h4>My Manager</h4>
->>>>>>> 44557c9b4597698d145d6a6fdfddcdc32aed5bf0
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
