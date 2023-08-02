@@ -63,13 +63,14 @@
     padding-left: 20px;
     padding-top: 5px;
     width: 100%;
-    background-color: rgb(255, 252, 249);
+    background-color: #ffd86c;
     height: 40px;
     box-shadow: 1px 1px 1px;
 }
 .barNavInfo h5{
     font-size: 20px;
     font-weight: 600;
+    color: ;
 }
 .Element{
     border: 0.1px solid grey;
@@ -88,6 +89,7 @@
 .ElementBar h4{
     font-size: 20px;
     font-weight: 400;
+    color: rgb(0, 0, 0);
 }
 .ElementContenu{
     padding: 2px;
@@ -114,7 +116,7 @@
     box-shadow: 0.5px 0.5px 0.5px;
     background: rgb(255, 255, 255);
     height: 500px;
-    width: 250px;
+    width: 300px;
 }
 .Revenu {
     color: green;
