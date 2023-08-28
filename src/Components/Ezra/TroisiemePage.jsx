@@ -1,5 +1,10 @@
+import "../../Style/TroisiemePage.css";
 function TroisiemePage() {
-  return <></>;
+  return (
+    <>
+      <h1>Troisiéme Page</h1>
+    </>
+  );
 }
 
 export default TroisiemePage;

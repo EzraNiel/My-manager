@@ -1,5 +1,10 @@
+import "../../Style/QuatriemePage.css";
 function QuatriemePage() {
-  return <></>;
+  return (
+    <>
+      <h1>Quatriéme Page</h1>
+    </>
+  );
 }
 
 export default QuatriemePage;

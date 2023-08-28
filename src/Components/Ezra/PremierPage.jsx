@@ -1,3 +1,6 @@
+import sary1 from "../../Assets/Image/react1png.png";
+import "../../Style/PremierPage.css";
+
 function PremierPage() {
   // State
 
@@ -6,7 +9,14 @@ function PremierPage() {
   //   Affichage ou render
   return (
     <>
-      <h1>HELLO EVERYONE</h1>
+      <div className="page"></div>
+      <h1>Premier Page</h1>
+      <img
+        alt=""
+        src={sary1}
+        min-width="100vh"
+        className="d-inline-block align-top"
+      />
     </>
   );
 }
