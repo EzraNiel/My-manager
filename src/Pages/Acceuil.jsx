@@ -1,5 +1,10 @@
 // import { Link } from "react-router-dom";
 import BarDeNavigation from "../Components/Ezra/BarDeNavigation";
+import PremierPage from "../Components/Ezra/PremierPage";
+import DeuxiemePage from "../Components/Ezra/DeuxiemePage";
+import TroisiemePage from "../Components/Ezra/TroisiemePage";
+import QuatriemePage from "../Components/Ezra/QuatriemePage";
+import CinquiemePage from "../Components/Ezra/CinquiemePage.JSX";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -21,7 +26,7 @@ function Acceuil() {
             finances.Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des
-            étudint de la 3éme année en informatique chez <span>ISPM</span> ({" "}
+            étudiant de la 3éme année en informatique chez <span>ISPM</span> ({" "}
             <span>I</span>
             nstitu <span>S</span>upérieur <span>P</span>
             olytechniquue de <span>M</span>adagascar)
