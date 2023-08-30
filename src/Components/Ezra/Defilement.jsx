@@ -2,38 +2,25 @@ import React, { useState } from "react";
 import PremierPage from "./PremierPage";
 import DeuxiemePage from "./DeuxiemePage";
 import TroisiemePage from "./TroisiemePage";
-import QuatriemePage from "./QuatriemePage";
-// import "../ ../Style/Defilement.css";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               "                                                               n  nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+import NavDefilement from "./NavDefilement";
+import "../../Style/Defilement.css";
 
 function Defilement() {
-  // State
-  const [currentPage, setCurrentPage] = useState(1);
+  const pages = [<PremierPage />, <DeuxiemePage />, <TroisiemePage />];
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
-  // Comportement
-
-  const goToNextPage = () => {
-    setCurrentPage((prevPage) => (prevPage < 4 ? prevPage + 1 : prevPage));
+  const handleScroll = () => {
+    setCurrentPageIndex((prevIndex) => (prevIndex + 1) % pages.length);
   };
 
-  const goToPreviousPage = () => {
-    setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
-  };
-
-  //   Affichage ou render
   return (
     <>
+      <NavDefilement></NavDefilement>
       <div className="home-container">
-        <div
-          className="pages-container"
-          style={{ transform: `translateX(-${(currentPage - 1) * 100}%)` }}
-        >
-          <PremierPage></PremierPage>
-          <DeuxiemePage></DeuxiemePage>
-          <TroisiemePage></TroisiemePage>
-          <QuatriemePage></QuatriemePage>
+        <div className="pages-container">{pages[currentPageIndex]}</div>
+        <div className="navigation-buttons">
+          <button onClick={handleScroll}>Passez</button>
         </div>
-        <button onClick={goToPreviousPage}>Précédent</button>
-        <button onClick={goToNextPage}>Suivant</button>
       </div>
     </>
   );

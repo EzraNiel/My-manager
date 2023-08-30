@@ -1,10 +1,4 @@
 import BarDeNavigation from "../Components/Ezra/BarDeNavigation";
-// import PremierPage from "../Components/Ezra/PremierPage";
-// import DeuxiemePage from "../Components/Ezra/DeuxiemePage";
-// import TroisiemePage from "../Components/Ezra/TroisiemePage";
-// import QuatriemePage from "../Components/Ezra/QuatriemePage";
-import Defilement from "../Components/Ezra/Defilement";
-// import CinquiemePage from "../Components/Ezra/CinquiemePage";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
 import image_acceuil from "../Assets/Image/Sary.jpg";
@@ -14,7 +8,6 @@ function Acceuil() {
   return (
     <>
       <BarDeNavigation></BarDeNavigation>
-      <Defilement></Defilement>
       <div className="grid-container">
         <div className="containt">
           <h4>My Manager</h4>
@@ -34,7 +27,7 @@ function Acceuil() {
           </p>
           <br />
           <p>
-            <Link role="button" class="btn btn-warning btn-lg" to="/Apropos">
+            <Link role="button" class="btn btn-warning btn-lg" to="/Defilement">
               Détail
             </Link>
           </p>

@@ -1,4 +1,5 @@
 import "../../Style/DeuxiemePage.css";
+
 function DeuxiemePage() {
   return (
     <>

@@ -1,4 +1,5 @@
 import "../../Style/QuatriemePage.css";
+
 function QuatriemePage() {
   return (
     <>
