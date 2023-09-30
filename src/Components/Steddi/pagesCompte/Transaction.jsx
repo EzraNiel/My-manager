@@ -116,7 +116,14 @@ function Transaction(){
                 </div>
             </div>
             <div className='AjoutElement'>
-
+                <h2>Effectuer une operation</h2>
+                <label htmlFor="cat">Catégorie</label>
+                <select name="" id="cat">
+                    <option value="">bus</option>
+                    <option value="">sakafo</option>
+                    <option value="">sigara</option>
+                    <option value="">gouter</option>
+                </select>
             </div>
         </div>
     )
