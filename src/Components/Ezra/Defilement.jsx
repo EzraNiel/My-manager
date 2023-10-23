@@ -16,12 +16,12 @@ function Defilement() {
   return (
     <>
       <NavDefilement></NavDefilement>
-      <div className="home-container">
+      {/* <div className="home-container">
         <div className="pages-container">{pages[currentPageIndex]}</div>
         <div className="navigation-buttons">
           <button onClick={handleScroll}>Passez</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
