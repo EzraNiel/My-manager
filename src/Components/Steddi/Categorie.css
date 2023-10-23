@@ -1,7 +1,7 @@
 .catDiv{
     background-color: rgb(255, 255, 255);
     width: 800px;
-    
+    margin-bottom: 20px;
     overflow: hidden;
 
 }
@@ -9,4 +9,43 @@
     margin-top: -120px;
     margin-left: -80px;
     width: 100%;
+}
+.catElement{
+    
+    margin-bottom: 15px;
+}
+.catElement h5{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.btn{
+    font-weight: bold;
+    width: 230px;
+    height: 45px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 1px rgb(49, 49, 49);
+}
+.btn1{
+    background-color: rgb(224, 224, 146);
+    border: 0;
+}
+.btn2{
+    background-color: rgb(224, 224, 146);
+}
+.plusCat{
+    margin-top: 30px;
+    width: 55px;
+    font-size: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: 1px 2px 1px;
+    border-radius: 10px;
+    background-color: rgb(246, 114, 255);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.plusCat span{
+    color: rgb(99, 14, 14);
 }

@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import BarDeNavigation from "../Components/Ezra/BarDeNavigation";
 import { Link } from "react-router-dom";
 import { Form, InputGroup, Button } from "react-bootstrap";
@@ -11,7 +10,6 @@ function Acceuil() {
       <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
-          <h4>My Manager</h4>
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
@@ -21,14 +19,14 @@ function Acceuil() {
             finances.Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des
-            étudint de la 3éme année en informatique chez <span>ISPM</span> ({" "}
+            étudiant de la 3éme année en informatique chez <span>ISPM</span> ({" "}
             <span>I</span>
             nstitu <span>S</span>upérieur <span>P</span>
             olytechniquue de <span>M</span>adagascar)
           </p>
           <br />
           <p>
-            <Link role="button" class="btn btn-warning btn-lg" to="/Apropos">
+            <Link role="button" class="btn btn-warning btn-lg" to="/Defilement">
               Détail
             </Link>
           </p>

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../Transaction.css'
-import React from 'react'
+import React, {useState} from 'react'
 import porte from '../iconSte/porte.png'
 import image from '../iconSte/logo1.png'
 import revenu from '../iconSte/img-revenu.png'
@@ -61,6 +61,17 @@ function Info(val,libelle,val1,libelle1){
     </div>)
 }
 function Transaction(){
+
+    // Les valeurs qui changent aucours du temps
+    const [ValPortefeuille, setVP]=useState("10.000.000$")
+    const [ValBanque, setVB]= useState("30.000.000$")
+    const [ValRevenus, setVR]= useState("300.000$")
+    const [ValDepenses, setVD]= useState("150.000$")
+    const [ValEquilibre, setVE]= useState("150.000$")
+    const [cat, setCatValue]=useState("sakafo")
+    const [cmpt, setCmpt]= useState("portefeuille")
+    const [Nombre, setNombre]= useState()
+    const [PU, setPU]= useState()
     return(
         <div>
             <div className='firstDiv'>
@@ -68,13 +79,13 @@ function Transaction(){
                     <div className="total col-md-5">
                         <div className='iconTotal'><img src={porte} alt="" /></div>
                         <h5 className='TotalLibelle'>Solde totale portefeuille</h5> 
-                        <h4>20.000.000$</h4>
+                        <h4>{ValPortefeuille}</h4>
 
                     </div>
                     <div className="total col-md-5">
                         <div className='iconTotal'><img src={image} alt="" /></div>
                         <h5 className='TotalLibelle'>Solde totale banque</h5>
-                        <h4>156.000.000$</h4>
+                        <h4>{ValBanque}</h4>
                     </div>
                 </div>
 
@@ -83,13 +94,13 @@ function Transaction(){
                         <div className="total2 col-md-5">
                                 <div className='iconRevDep'><img src={revenu} alt="" /></div>
                                 <h5>Revenus</h5>  
-                                <h4 className='Revenu1'>300.000$</h4>
+                                <h4 className='Revenu1'>{ValRevenus}</h4>
 
                             </div>
                             <div className="total2 col-md-5">
                                 <div className='iconRevDep'><img src={depense} alt="" /></div>
                                 <h5 >Depenses</h5>
-                                <h4 className='Depense1'>150.000$</h4>
+                                <h4 className='Depense1'>{ValDepenses}</h4>
                             </div>
                     </div>
                     <hr />
@@ -101,7 +112,7 @@ function Transaction(){
                             </div>
                             <div className="total3 col-md-5">
                                 <h5>Equilibre</h5>
-                                <h4>150.000$</h4>
+                                <h4>{ValEquilibre}</h4>
                             </div>
                     </div>
                 </div>
@@ -115,8 +126,41 @@ function Transaction(){
                     {Info(-26,'Sakafo',-50,'sigara')}
                 </div>
             </div>
-            <div className='AjoutElement'>
-
+            <div className='AjoutElement '>
+                <h4>Effectuer une operation</h4>
+                <hr />
+                <div>
+                    <label htmlFor="cat">Choisir une catégorie :</label>
+                    <select name="" id="cat" value={cat} onChange={(e) => setCatValue(e.target.value)}>
+                        <option value="bus">bus</option>
+                        <option value="sakafo">sakafo</option>
+                        <option value="sigara">sigara</option>
+                        <option value="gouter">gouter</option>
+                    </select>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="cmpt">Paiement par :</label>
+                    <select name="" id="cmpt" value={cmpt} onChange={(e) => setCmpt(e.target.value)}>
+                        <option value="portefeuille">Portefeuille</option>
+                        <option value="banque">Banque</option>
+                        <option value="autre">autre</option>
+                    </select>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="">Nombre</label>
+                    <input type="number" value={Nombre} onChange={(e) => setNombre(e.target.value)} placeholder='Entrer le nombre...'/>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="prix">Prix d'un unité</label>
+                    <input type="number" value={PU} onChange={(e) => setPU(e.target.value)} placeholder="Entrer le prix d'un unité..."/>
+                </div>
+                <div className='row'>
+                    <button className="btn btn-perso">Annuler</button>
+                    <button className='btn btn-primary'>Confirmer</button>
+                </div>
             </div>
         </div>
     )

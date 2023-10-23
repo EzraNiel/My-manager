@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import img from "../../Assets/Image/Logo-MyManager-2.png";
 import "../../Style/BarDeNav.css";
+import img from "../../Assets/Image/Logo-MyManager-2.png";
 
 function Bar_de_navigation() {
   return (
