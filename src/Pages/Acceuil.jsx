@@ -10,7 +10,6 @@ function Acceuil() {
       <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
-          <h4>My Manager</h4>
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
