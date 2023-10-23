@@ -17,10 +17,10 @@ export function Formulaire() {
                 <div className=" d-flex left-box" id="box-left">
                     <form>
                             <div className="row">
-                                    <div className="header mb-2">
+                                    <div className="header mb-4">
                                         <h3> Se connecter à un compte</h3>
                                     </div>
-                                    <div className="input-group mb-2">
+                                    <div className="input-group mb-3">
                                         <input
                                             type="email"
                                             name=""
@@ -41,9 +41,11 @@ export function Formulaire() {
                                         <span class="border"></span>
                                     </div>
                                 
-                                    <Link to="/Compte" ><button type='submit' id="bout1" >Se connecter</button></Link>
+                                    <Link to="/Compte" className="mb-3">
+                                        <button type='submit' id="bout1">Se connecter</button>
+                                    </Link>
                                     
-                                    <div className="line-container mb-4">
+                                    <div className="line-container mb-3">
                                         <hr className="line short" />
                                         <span>  ou </span>
                                         <hr className="line short" />
@@ -64,7 +66,7 @@ export function Formulaire() {
                 {/* right box */}
                 <div className="align-items-center flex-column mb-4 right-box">
                     <h3 className="mb-4"> My manager</h3>
-                    <p className="mb-6">Pour accéder à votre compte, veuillez entrer votre identité ainsi que votre mot de passe ici</p>
+                    <p className="">Pour accéder à votre compte, veuillez entrer votre identité ainsi que votre mot de passe ici</p>
                     <div id="illustration"><img src={img} alt=""  className=""/></div>
                 </div>
                
