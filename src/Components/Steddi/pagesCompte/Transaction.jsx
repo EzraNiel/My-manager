@@ -115,8 +115,41 @@ function Transaction(){
                     {Info(-26,'Sakafo',-50,'sigara')}
                 </div>
             </div>
-            <div className='AjoutElement'>
-
+            <div className='AjoutElement '>
+                <h4>Effectuer une operation</h4>
+                <hr />
+                <div>
+                    <label htmlFor="cat">Choisir une catégorie :</label>
+                    <select name="" id="cat">
+                        <option value="">bus</option>
+                        <option value="">sakafo</option>
+                        <option value="">sigara</option>
+                        <option value="">gouter</option>
+                    </select>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="cmpt">Paiement par :</label>
+                    <select name="" id="cmpt">
+                        <option value="">Portefeuille</option>
+                        <option value="">Banque</option>
+                        <option value="">autre</option>
+                    </select>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="">Nombre</label>
+                    <input type="number" placeholder='Entrer le nombre...'/>
+                </div>
+                <hr />
+                <div>
+                    <label htmlFor="prix">Prix d'un unité</label>
+                    <input type="number" placeholder="Entrer le prix d'un unité..."/>
+                </div>
+                <div className='row'>
+                    <button className="btn btn-perso">Annuler</button>
+                    <button className='btn btn-primary'>Confirmer</button>
+                </div>
             </div>
         </div>
     )
