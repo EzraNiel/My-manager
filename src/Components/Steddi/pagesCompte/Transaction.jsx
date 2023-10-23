@@ -70,6 +70,8 @@ function Transaction(){
     const [ValEquilibre, setVE]= useState("150.000$")
     const [cat, setCatValue]=useState("sakafo")
     const [cmpt, setCmpt]= useState("portefeuille")
+    const [Nombre, setNombre]= useState()
+    const [PU, setPU]= useState()
     return(
         <div>
             <div className='firstDiv'>
@@ -148,12 +150,12 @@ function Transaction(){
                 <hr />
                 <div>
                     <label htmlFor="">Nombre</label>
-                    <input type="number" placeholder='Entrer le nombre...'/>
+                    <input type="number" value={Nombre} onChange={(e) => setNombre(e.target.value)} placeholder='Entrer le nombre...'/>
                 </div>
                 <hr />
                 <div>
                     <label htmlFor="prix">Prix d'un unité</label>
-                    <input type="number" placeholder="Entrer le prix d'un unité..."/>
+                    <input type="number" value={PU} onChange={(e) => setPU(e.target.value)} placeholder="Entrer le prix d'un unité..."/>
                 </div>
                 <div className='row'>
                     <button className="btn btn-perso">Annuler</button>

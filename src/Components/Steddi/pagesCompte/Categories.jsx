@@ -6,7 +6,33 @@ function Categories(){
     return(
         <div>
             <div className='catDiv'>
-                <img src={cat} alt="" />
+                {/* <img src={cat} alt="" /> */}
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
             </div>
         </div>
     )
