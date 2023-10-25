@@ -100,12 +100,17 @@
     width: 300px;
 }
 .modalAnnuler{
-    width:90px;
-    margin-left:0;
+    border-radius:8px 8px 8px 8px;
+    width:120px;
+    height: 37px;
+    transform: translate(-40px,0);
+    left:0;
 }
 .modalConfirmer{
-    width:100px;
-    right:5px;
+    border-radius:8px 8px 8px 8px;
+    width:120px;
+    height: 37px;
+    right:0;
 }
 
 #personModal {
@@ -134,10 +139,11 @@
   .divCacher{
     padding-top: 50px;
     position: absolute;
-    right: 25px;
-    background-color: red;
-    width: 300px;
-    height: 350px;
+    right: 24px;
+    border:1px solid rgb(0, 0, 0);
+    background-color: rgb(77, 77, 77);
+    width: 320px;
+    height: 370px;
   }
   .visible{
     visibility: visible;
