@@ -13,21 +13,21 @@ function Acceuil() {
           <h1>Bonjour cher visiteur </h1>
           <br />
           <p>
-            Ceci est la tout première version de{" "}
+            Ceci est la toute première version de{" "}
             <span className="text_my_manager">My Manager</span>,un apk web conçu
-            pour vous aidez dans la gestion de vos budget et de vos
-            finances.Elle est pour le moment la version 1.0 mais des mises à
+            pour vous aidez dans la gestion de vos budgets et de vos
+            finances. Elle est pour le moment la version 1.0 mais des mises à
             jour pour la version 2.0 ne vont pas tarder car noter objectif est
             tout de même de satisfaire nos clients . Nous sommes encore des
-            étudiant de la 3éme année en informatique chez <span>ISPM</span> ({" "}
+            étudiant de la 3ème année en informatique chez <span>ISPM</span> ({" "}
             <span>I</span>
-            nstitu <span>S</span>upérieur <span>P</span>
-            olytechniquue de <span>M</span>adagascar)
+            nstitut <span>S</span>upérieur <span>P</span>
+            olytechnique de <span>M</span>adagascar)
           </p>
           <br />
           <p>
             <Link role="button" class="btn btn-warning btn-lg" to="/Defilement">
-              Détail
+              Détails
             </Link>
           </p>
           <br />

@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(173, 189, 204);
+}
 *{
     margin:0;
     box-sizing: border-box;
@@ -140,13 +143,12 @@ input{
   .line {
     flex: 1;
     height: 1px;
-    background-color:red;
-    display:block; 
+    background-color:white;
   }
   
   .short {
     width:169px;
-    background-color:red;
+    background-color:white;
   }
 
 .ROND{
@@ -186,7 +188,7 @@ input{
     text-align: center;
 }
 .right-box h3{
-    color:#00609D;
+    color:#00a2ff;
     margin-left:35px;
     text-align: center;
 }

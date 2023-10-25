@@ -78,13 +78,13 @@ function Transaction(){
                 <div className='row'>
                     <div className="total col-md-5">
                         <div className='iconTotal'><img src={porte} alt="" /></div>
-                        <h5 className='TotalLibelle'>Solde totale portefeuille</h5> 
+                        <h5 className='TotalLibelle'>Solde total portefeuille</h5> 
                         <h4>{ValPortefeuille}</h4>
 
                     </div>
                     <div className="total col-md-5">
                         <div className='iconTotal'><img src={image} alt="" /></div>
-                        <h5 className='TotalLibelle'>Solde totale banque</h5>
+                        <h5 className='TotalLibelle'>Solde total banque</h5>
                         <h4>{ValBanque}</h4>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ function Transaction(){
                             </div>
                             <div className="total2 col-md-5">
                                 <div className='iconRevDep'><img src={depense} alt="" /></div>
-                                <h5 >Depenses</h5>
+                                <h5 >Dépenses</h5>
                                 <h4 className='Depense1'>{ValDepenses}</h4>
                             </div>
                     </div>
