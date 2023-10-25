@@ -20,68 +20,9 @@ function ElementInfo(val,libelle){
             <div className='col-md-3'>
                 <h5 className={nature}>{val}</h5>
             </div>
-            {/* <div className="col-md-1"><button className='supp'>X</button></div> */}
         </div>
     )
 }
-// function Info(){
-
-//     const [test, setTest]= useState([
-//         {id: 1, nom:"sakafo", val: 1500},
-//         {id: 2, nom:"Gouter", val: 3400},
-//         {id: 3, nom:"Frais", val: 500}
-//     ])
-//     const handleDelete= (id)=>{
-//         const testCopy= [... test]
-//         const testCopyUpdate= testCopy.filter((cat)=> cat.id !== id)
-//         setTest(testCopyUpdate)
-//         // console.log("mandeh eh")
-//     }
-
-//     let valTotal1=0
-//     let valTotal2=0
-//     // if ((val>0 && val1>0) || (val<0 && val1<0)){
-//     //     if(val<0){
-//     //         valTotal1=0
-//     //         valTotal2= val+val1
-//     //     }
-//     //     else{
-//     //         valTotal1=val+val1
-//     //         valTotal2=0
-//     //     }
-        
-//     // }
-//     // else{
-//     //     if((val>0) && (val1<0)){
-//     //         valTotal1=val
-//     //         valTotal2=val1
-//     //     }
-//     //     else{
-//     //         valTotal1=val1
-//     //         valTotal2=val
-//     //     }
-//     // }
-//     return(<div className="Element">
-//         <div className='ElementBar row'>
-//             <div className='col-md-4'><h4>Date</h4></div>
-//             <div className='col-md-4 val'><h4>{valTotal1}.00$</h4></div>
-//             <div className='col-md-4 val'><h4>{valTotal2}.00$</h4></div>
-//         </div>
-//         <ul>
-//             {test.map((cat)=>(
-//                 <li key={cat.id}>
-//                    {cat.nom}{"    "}{cat.val}
-//                    <button className='supp' onClick={()=>handleDelete(cat.id)}>X</button> 
-//                 </li>
-//             ))}
-//         </ul>
-//         {/* {ElementInfo(val,libelle)}
-//         {ElementInfo(val1,libelle1)} */}
-//         <button className='ElementDetails'>
-//             Details
-//         </button>
-//     </div>)
-// }
 function ancien(val,libelle,val1,libelle1){
     let valTotal1=0
     let valTotal2=0
