@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './styleConnexion.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -6,8 +6,10 @@ import img from './illustration.png';
 // import { button } from 'react-bootstrap';
 
 export function Formulaire() {
+    const [mail,setMail]= useState("")
+    const [mdp,setMdp]= useState("")
     return( 
-  <>  
+    <>  
 
       {/* main container */}
     <div className="container1 ">
@@ -23,6 +25,8 @@ export function Formulaire() {
                                     <div className="input-group mb-3">
                                         <input
                                             type="email"
+                                            value={mail}
+                                            onChange={(e)=>setMail(e.target.value)}
                                             name=""
                                             id=""
                                             className="effect-3"
@@ -33,6 +37,8 @@ export function Formulaire() {
                                     <div className="input-group mb-5">
                                         <input
                                                 type="password"
+                                                value={mdp}
+                                                onChange={(e)=>setMdp(e.target.value)}
                                                 name=""
                                                 id=""
                                                 className="effect-3"
