@@ -28,12 +28,14 @@ function Compte() {
       <div className="container-fluid barnav"><div className="logo"><img src={image} alt="" /></div></div>
       <div className="glisseGauche">
         <div className="Parametre">
-          <h4>Parametre</h4>
+          <h4>Paramètres</h4>
           <div></div>
         </div>
         <ul className="listUl">
           <li><Link to="/"><div className="list">Acceuil</div></Link></li>
           <li><Link to="/Apropos"><div className="list">A propos</div></Link></li>
+          <li><Link to="/Contact"><div className="list">Contacts</div></Link></li>
+          <li><Link to="/Creation"><div className="list">Créer un compte</div></Link></li>
           <li><Link to="/Connexion"><div className="list">Deconnexion</div></Link></li>
         </ul>
       </div>

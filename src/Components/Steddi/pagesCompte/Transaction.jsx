@@ -131,7 +131,7 @@ function Transaction(){
                             </div>
                             <div className="total2 col-md-5">
                                 <div className='iconRevDep'><img src={depense} alt="" /></div>
-                                <h5 >Depenses</h5>
+                                <h5 >Dépenses</h5>
                                 <h4 className='Depense1'>{ValDepenses}</h4>
                             </div>
                     </div>
@@ -176,7 +176,6 @@ function Transaction(){
                     {ancien(2500,'Cadeau',-30,'taxi')}
                     {ancien(-26,'Sakafo',-50,'sigara')}
                     {ancien(-256,'Frais',-50,'sigara')}
-                    
                 </div>
             </div>
             <div className='AjoutElement '>
