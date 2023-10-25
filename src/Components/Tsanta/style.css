@@ -105,7 +105,15 @@
     flex-direction: column;
     margin-bottom: 10px;
   }
-  
+  .input-group-mail,
+  .input-group-mdp,
+  .input-group-ConfirmMdp{
+    width: 105%;
+  }
+  .input-group-nom input,
+  .input-group-prenom input{
+    width: 98%;
+  }
   .input-group-nom input,
   .input-group-prenom input,
   .input-group-mail input,
@@ -117,8 +125,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     height: 35px;
+    
   }
-  
+  .creer{
+    width: 100px;
+  }
   
   .label-input {
     font-size: 14px;

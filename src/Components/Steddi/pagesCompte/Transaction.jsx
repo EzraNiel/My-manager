@@ -121,6 +121,7 @@ function Transaction(){
                 <div className="barNavInfo"><h5>Informations</h5></div>
                 <div className='scrolleo'>
                     {Info(-500,'Transport',-20,'Achat')}
+                    {Info(-500,'Transport',-20,'Achat')}
                     {Info(2500,'Cadeau',-30,'taxi')}
                     {Info(-26,'Sakafo',-50,'sigara')}
                     {Info(-26,'Sakafo',-50,'sigara')}
