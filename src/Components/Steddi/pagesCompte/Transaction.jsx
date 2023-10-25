@@ -5,6 +5,7 @@ import porte from '../iconSte/porte.png'
 import image from '../iconSte/logo1.png'
 import revenu from '../iconSte/img-revenu.png'
 import depense from '../iconSte/img-revenu(2).png'
+import suppr from '../iconSte/supprimer.png'
 
 function ElementInfo(val,libelle){
     let nature='Revenu'
@@ -87,6 +88,13 @@ function Transaction(){
         setTest(testCopyUpdate)
         // console.log("mandeh eh")
     }
+    const testnature= (a)=>{
+        let nature='Revenu'
+        if(a<0){
+            nature='Depense'
+        }
+        return nature
+    }
     let valTotal1=0
     let valTotal2=0
     const ajouterElement = () => {
@@ -163,9 +171,9 @@ function Transaction(){
                             <ul>
                                 {test.map((cat)=>(
                                     <li key={cat.id} className='row'>
-                                        <div className='col-8'>{cat.nom}</div>
-                                        <div className='col-2'>{cat.val}</div>
-                                    <button className='supp' onClick={()=>handleDelete(cat.id)}>X</button> 
+                                        <div className='col-8 ElementContenu2'>{cat.nom}</div>
+                                        <div className='col-2'><h5 className={testnature(cat.val)} id="catValId" >{cat.val}</h5></div>
+                                        <img src={suppr} className='supp' onClick={()=>handleDelete(cat.id)}></img> 
                                     </li>
                                 ))}
                             </ul>

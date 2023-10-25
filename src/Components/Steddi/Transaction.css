@@ -139,14 +139,12 @@
     margin-top: -20px
 }
 .supp{
-    background-color: rgb(151, 62, 62);
-    color: white;
     padding-top: 2px;
     margin-top: 1px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    border-radius: 50px;
+    cursor: pointer;
 }
 .iconTotal{
     width: 40px;
@@ -256,4 +254,14 @@
 }
 .btn-perso{
     border-color: #EEB000;
+}
+.ElementContenu2{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+#catValId{
+    font-size: 18px;
+    letter-spacing: 2px;
 }
