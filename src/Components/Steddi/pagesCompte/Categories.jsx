@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 import React,{useState} from 'react'
 import '../Categorie.css'
 import cat from '../iconSte/supprimer.png'
@@ -9,6 +10,8 @@ import i3 from '../iconSte/icon/restaurant-vegetarien.png'
 import i4 from '../iconSte/icon/crayon.png'
 import i5 from '../iconSte/icon/bagages-de-voyage.png'
 import i6 from '../iconSte/icon/project-management.png'
+import i7 from '../iconSte/icon/cancel.png'
+// import ModalForm from './Modal';
 function CatElement(){
 
     const [listIcons, setListIcon] = useState([
@@ -39,62 +42,45 @@ function CatElement(){
     )
 }
 
+
 function Categories(){
+//     const [showModal, setShowModal] = useState(false);
+
+//   const openModal = () => {
+//     setShowModal(true);
+//   };
+
+//   const closeModal = () => {
+//     setShowModal(false);
+//   };
+    const [estVisible, setEstVisible]=useState(false)
+    const ajouter= ()=>{
+        setEstVisible(!estVisible)
+    }
     return(
         <div>
              <div className='row mb-3'>
                 <div className='col-3 offset-1'><button className='btn btn1'>Revenus</button></div>
                 <div className='col-3'><button className='btn btn2'>Dépenses</button></div>
             </div>
-           
+            <div className={`divCacher ${estVisible ? 'visible' : 'nonVisible'}`}>
+                <label htmlFor="za">Prenom</label>
+                <input type="text" id='za'/>
+                <label htmlFor="ze">nom</label>
+                <input type="text" id='ze'/>
+            </div>
             <div className='catDiv mb-6'>
                 {/* <img src={cat} alt="" /> */}
                 {CatElement()}
                     
             </div>
+            <button type="button" className="offset-7 ajouter" onClick={ajouter} >
+                 <img className="ajouter" src={cat1} alt="" />
+            </button>
+             {/* <ModalForm show={showModal} onClose={closeModal} /> */}
            
-            <div className='row'>
-                <div className="offset-8"> <button className="ajouter"> <img className="ajouter" src={cat1} alt=""/></button></div>
-                
-            </div>
         </div>
     )
 }
-            // <div className='AjoutElement '>
-            //     <h4>Effectuer une operation</h4>
-            //     <hr />
-            //     <div>
-            //         <label htmlFor="cat">Choisir une catégorie :</label>
-            //         <select name="" id="cat">
-            //             <option value="bus">bus</option>
-            //             <option value="sakafo">sakafo</option>
-            //             <option value="sigara">sigara</option>
-            //             <option value="gouter">gouter</option>
-            //         </select>
-            //     </div>
-            //     <hr />
-            //     <div>
-            //         <label htmlFor="cmpt">Paiement par :</label>
-            //         <select name="" id="cmpt" >
-            //             <option value="portefeuille">Portefeuille</option>
-            //             <option value="banque">Banque</option>
-            //             <option value="autre">autre</option>
-            //         </select>
-            //     </div>
-            //     <hr />
-            //     <div>
-            //         <label htmlFor="">Nombre</label>
-            //         <input type="number"  placeholder='Entrer le nombre...'/>
-            //     </div>
-            //     <hr />
-            //     <div>
-            //         <label htmlFor="prix">Prix d'un unité</label>
-            //         <input type="number"  placeholder="Entrer le prix d'un unité..."/>
-            //     </div>
-            //     <div className='row'>
-            //         <button className="btn btn-perso">Annuler</button>
-            //         <button className='btn btn-primary'>Confirmer</button>
-            //     </div>
-            // </div>
 
 export default Categories;
