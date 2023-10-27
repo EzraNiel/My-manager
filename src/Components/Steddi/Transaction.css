@@ -113,9 +113,11 @@
     border: 1px solid grey;
     border-radius: 5px;
     box-shadow: 0.5px 0.5px 0.5px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) ;
     height: 500px;
     width: 300px;
+    text-align: center;
+    display: inline;
 }
 .Revenu {
     color: green;
@@ -242,10 +244,7 @@
     
     font-size:20px;
 }
-.AjoutElement{
-    text-align: center;
-    display: inline;
-}
+
 .AjoutElement button{
     width: 40%;
     margin: 5px;
@@ -264,4 +263,25 @@
 #catValId{
     font-size: 18px;
     letter-spacing: 2px;
+}
+.titreChoixCat, .selectClass option,.titreNombre,.titrePu{
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.selectClass{
+    width: 250px;
+}
+.redBorder{
+    border-color: red !important;
+    box-shadow: none !important;
+}
+.noRed{
+    background-color: #EEB000;
+}
+.redColor{
+    color: red;
+    font-weight: bold;
+}
+.blueColor{
+    color: black;
 }

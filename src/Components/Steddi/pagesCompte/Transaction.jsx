@@ -73,6 +73,9 @@ function Transaction(){
     const [cmpt, setCmpt]= useState("portefeuille")
     const [Nombre, setNombre]= useState('')
     const [PU, setPU]= useState('')
+    const [borderColor, setBorder]= useState(false)
+    const [borderColorNombre, setBorderNombre]= useState(false)
+    const [borderColorPU, setBorderPU]= useState(false)
 
     const [test, setTest]= useState([
         {id: 1, nom:"sakafo", val: 1500},
@@ -98,17 +101,26 @@ function Transaction(){
     let valTotal1=0
     let valTotal2=0
     const ajouterElement = () => {
+        setBorderNombre(false)
+        setBorderPU(false)
         // Créez le nouvel élément que vous souhaitez ajouter
-       if(Nombre || PU !== ''){
+        if(Nombre !==0 && PU !== '' && Nombre !=='' && PU !== 0){
         const nouvelElement = { id: test.length + 1, nom: cat, val: calculVal(Nombre,PU) };
 
         // Utilisez setTest pour mettre à jour le state en ajoutant le nouvel élément
         setTest([...test, nouvelElement]);
         setNombre('')
         setPU('')
+        setBorderNombre(false)
+        setBorderPU(false)
        }
        else {
             
+            setBorder(!borderColor)
+            if((Nombre === 0) || (Nombre===''))
+                setBorderNombre(true)
+            if(PU ==='' || PU === 0)
+                setBorderPU(true)
        }
 
     }
@@ -186,12 +198,12 @@ function Transaction(){
                     {ancien(-256,'Frais',-50,'sigara')}
                 </div>
             </div>
-            <div className='AjoutElement '>
+            <div className={`AjoutElement ${borderColor ? 'redBorder' : 'noRed' }`}>
                     <h4>Effectuer une operation</h4>
                     <hr />
                     <div>
-                        <label htmlFor="cat">Choisir une catégorie :</label>
-                        <select name="" id="cat" value={cat} onChange={(e) => setCatValue(e.target.value)}>
+                        <label htmlFor="cat" className='titreChoixCat'>Choisir une catégorie :</label>
+                        <select name="" id="cat" value={cat} onChange={(e) => setCatValue(e.target.value)} className='selectClass'>
                             <option value="bus">bus</option>
                             <option value="sakafo">sakafo</option>
                             <option value="sigara">sigara</option>
@@ -200,8 +212,8 @@ function Transaction(){
                     </div>
                     <hr />
                     <div>
-                        <label htmlFor="cmpt">Paiement par :</label>
-                        <select name="" id="cmpt" value={cmpt} onChange={(e) => setCmpt(e.target.value)}>
+                        <label htmlFor="cmpt" className='titreChoixCat'>Paiement par :</label>
+                        <select name="" id="cmpt" value={cmpt} onChange={(e) => setCmpt(e.target.value)} >
                             <option value="portefeuille">Portefeuille</option>
                             <option value="banque">Banque</option>
                             <option value="autre">autre</option>
@@ -209,12 +221,12 @@ function Transaction(){
                     </div>
                     <hr />
                     <div>
-                        <label htmlFor="">Nombre</label>
+                        <label htmlFor="" className={`titreNombre ${borderColorNombre ? 'redColor':'blueColor'}`}>Nombre</label>
                         <input type="number" value={Nombre} onChange={(e) => setNombre(e.target.value)} placeholder='Entrer le nombre...'/>
                     </div>
                     <hr />
                     <div>
-                        <label htmlFor="prix">Prix d'un unité</label>
+                        <label htmlFor="prix" className={`titrePu ${borderColorPU ? 'redColor':'blueColor'}`}>Prix d'un unité</label>
                         <input type="number" value={PU} onChange={(e) => setPU(e.target.value)} placeholder="Entrer le prix d'un unité..."/>
                     </div>
                     <div className='row'>

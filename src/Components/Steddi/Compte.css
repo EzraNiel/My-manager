@@ -130,6 +130,9 @@
     padding: 15px 10px;
     background-color: #f7f7f74f;
 }
+Link{
+    text-decoration: none;
+}
 .list{
     width: 200px;
     color: black;
