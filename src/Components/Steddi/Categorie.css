@@ -21,12 +21,13 @@
 }
 .contenu{
     margin-top:5%;
-    margin-left:-2%;
+    margin-left:3%;
 }
 .divcont{
-    margin-left:-10%;
+    margin-left:-2%;
 }
 .btn{
+  
     font-weight: bold;
     width: 230px;
     height: 45px;
@@ -44,7 +45,7 @@
     box-shadow: 1px 1px 1px rgb(9, 192, 3) ; 
 }
 .btn2{
-    margin-left:20px;
+    margin-left:35px;
     border:none;
     /* background-color: #FFE600; */
     /* border:10px rgb(255, 0, 0); */

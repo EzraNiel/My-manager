@@ -10,7 +10,7 @@ import i3 from '../iconSte/icon/restaurant-vegetarien.png'
 import i4 from '../iconSte/icon/crayon.png'
 import i5 from '../iconSte/icon/bagages-de-voyage.png'
 import i6 from '../iconSte/icon/project-management.png'
-import i7 from '../iconSte/icon/cancel.png'
+// import i7 from '../iconSte/icon/cancel.png'
 // import ModalForm from './Modal';
 function CatElement(){
 
@@ -32,9 +32,9 @@ function CatElement(){
         <div className='contenu'>
             {listIcons.map((val) => (
                  <div className='row catElement mb-4 offset-1' key={val.id}> 
-                    <div className='col-md-1 ' >{val.icon}</div>
-                    <div className='col-md-5' ><h5>{val.nom}</h5></div>
-                    <div className='col-md-5'> <button className="boutSUP" onClick={()=>handleDelete(val.id)} ><img className="supprimer" src={cat} alt="" /></button> </div>
+                    <div className='col-md-2 ' >{val.icon}</div>
+                    <div className='col-md-6' ><h5>{val.nom}</h5></div>
+                    <div className='col-md-4'> <button className="boutSUP" onClick={()=>handleDelete(val.id)} ><img className="supprimer" src={cat} alt="" /></button> </div>
                  </div>
             ))}
             
@@ -100,7 +100,7 @@ function Categories(){
                 {CatElement()}
                     
             </div>
-            <button type="button" className="offset-6 ajouter" onClick={ajouter} >
+            <button type="button" className="offset-7 ajouter" onClick={ajouter} >
                  <img className="ajouter" src={cat1} alt="" />
             </button>
              {/* <ModalForm show={showModal} onClose={closeModal} /> */}
@@ -108,5 +108,8 @@ function Categories(){
         </div>
     )
 }
+
+
+
 
 export default Categories;
