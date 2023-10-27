@@ -5,6 +5,8 @@ import porte from '../iconSte/porte.png'
 import image from '../iconSte/logo1.png'
 import revenu from '../iconSte/img-revenu.png'
 import depense from '../iconSte/img-revenu(2).png'
+import suppr from '../iconSte/supprimer.png'
+
 function ElementInfo(val,libelle){
     let nature='Revenu'
     if(val<0){
@@ -19,11 +21,10 @@ function ElementInfo(val,libelle){
             <div className='col-md-3'>
                 <h5 className={nature}>{val}</h5>
             </div>
-            <div className="col-md-1"><button className='supp'>X</button></div>
         </div>
     )
 }
-function Info(val,libelle,val1,libelle1){
+function ancien(val,libelle,val1,libelle1){
     let valTotal1=0
     let valTotal2=0
     if ((val>0 && val1>0) || (val<0 && val1<0)){
@@ -70,8 +71,59 @@ function Transaction(){
     const [ValEquilibre, setVE]= useState("150.000$")
     const [cat, setCatValue]=useState("sakafo")
     const [cmpt, setCmpt]= useState("portefeuille")
-    const [Nombre, setNombre]= useState()
-    const [PU, setPU]= useState()
+    const [Nombre, setNombre]= useState('')
+    const [PU, setPU]= useState('')
+    const [borderColor, setBorder]= useState(false)
+    const [borderColorNombre, setBorderNombre]= useState(false)
+    const [borderColorPU, setBorderPU]= useState(false)
+
+    const [test, setTest]= useState([
+        {id: 1, nom:"sakafo", val: 1500},
+        {id: 2, nom:"Gouter", val: 3400},
+        {id: 3, nom:"Frais", val: 500}
+    ])
+    const calculVal= (a,b)=>{
+        return a*b
+    }
+    const handleDelete= (id)=>{
+        const testCopy= [... test]
+        const testCopyUpdate= testCopy.filter((cat)=> cat.id !== id)
+        setTest(testCopyUpdate)
+        // console.log("mandeh eh")
+    }
+    const testnature= (a)=>{
+        let nature='Revenu'
+        if(a<0){
+            nature='Depense'
+        }
+        return nature
+    }
+    let valTotal1=0
+    let valTotal2=0
+    const ajouterElement = () => {
+        setBorderNombre(false)
+        setBorderPU(false)
+        // Créez le nouvel élément que vous souhaitez ajouter
+        if(Nombre !==0 && PU !== '' && Nombre !=='' && PU !== 0){
+        const nouvelElement = { id: test.length + 1, nom: cat, val: calculVal(Nombre,PU) };
+
+        // Utilisez setTest pour mettre à jour le state en ajoutant le nouvel élément
+        setTest([...test, nouvelElement]);
+        setNombre('')
+        setPU('')
+        setBorderNombre(false)
+        setBorderPU(false)
+       }
+       else {
+            
+            setBorder(!borderColor)
+            if((Nombre === 0) || (Nombre===''))
+                setBorderNombre(true)
+            if(PU ==='' || PU === 0)
+                setBorderPU(true)
+       }
+
+    }
     return(
         <div>
             <div className='firstDiv'>
@@ -120,47 +172,68 @@ function Transaction(){
             <div className="informations">
                 <div className="barNavInfo"><h5>Informations</h5></div>
                 <div className='scrolleo'>
-                    {Info(-500,'Transport',-20,'Achat')}
-                    {Info(2500,'Cadeau',-30,'taxi')}
-                    {Info(-26,'Sakafo',-50,'sigara')}
-                    {Info(-26,'Sakafo',-50,'sigara')}
+
+                    {/*Affichage*/}
+                    <div className="Element">
+                            <div className='ElementBar row'>
+                                <div className='col-md-4'><h4>Date</h4></div>
+                                <div className='col-md-4 val'><h4>{valTotal1}.00$</h4></div>
+                                <div className='col-md-4 val'><h4>{valTotal2}.00$</h4></div>
+                            </div>
+                            <ul>
+                                {test.map((cat)=>(
+                                    <li key={cat.id} className='row'>
+                                        <div className='col-8 ElementContenu2'>{cat.nom}</div>
+                                        <div className='col-2'><h5 className={testnature(cat.val)} id="catValId" >{cat.val}</h5></div>
+                                        <img src={suppr} className='supp' onClick={()=>handleDelete(cat.id)}></img> 
+                                    </li>
+                                ))}
+                            </ul>
+                            <button className='ElementDetails'>
+                                Details
+                            </button>
+                    </div>
+                    {ancien(2500,'Cadeau',-30,'taxi')}
+                    {ancien(-26,'Sakafo',-50,'sigara')}
+                    {ancien(-256,'Frais',-50,'sigara')}
                 </div>
             </div>
-            <div className='AjoutElement '>
-                <h4>Effectuer une operation</h4>
-                <hr />
-                <div>
-                    <label htmlFor="cat">Choisir une catégorie :</label>
-                    <select name="" id="cat" value={cat} onChange={(e) => setCatValue(e.target.value)}>
-                        <option value="bus">bus</option>
-                        <option value="sakafo">sakafo</option>
-                        <option value="sigara">sigara</option>
-                        <option value="gouter">gouter</option>
-                    </select>
-                </div>
-                <hr />
-                <div>
-                    <label htmlFor="cmpt">Paiement par :</label>
-                    <select name="" id="cmpt" value={cmpt} onChange={(e) => setCmpt(e.target.value)}>
-                        <option value="portefeuille">Portefeuille</option>
-                        <option value="banque">Banque</option>
-                        <option value="autre">autre</option>
-                    </select>
-                </div>
-                <hr />
-                <div>
-                    <label htmlFor="">Nombre</label>
-                    <input type="number" value={Nombre} onChange={(e) => setNombre(e.target.value)} placeholder='Entrer le nombre...'/>
-                </div>
-                <hr />
-                <div>
-                    <label htmlFor="prix">Prix d'un unité</label>
-                    <input type="number" value={PU} onChange={(e) => setPU(e.target.value)} placeholder="Entrer le prix d'un unité..."/>
-                </div>
-                <div className='row'>
-                    <button className="btn btn-perso">Annuler</button>
-                    <button className='btn btn-primary'>Confirmer</button>
-                </div>
+            <div className={`AjoutElement ${borderColor ? 'redBorder' : 'noRed' }`}>
+                    <h4>Effectuer une operation</h4>
+                    <hr />
+                    <div>
+                        <label htmlFor="cat" className='titreChoixCat'>Choisir une catégorie :</label>
+                        <select name="" id="cat" value={cat} onChange={(e) => setCatValue(e.target.value)} className='selectClass'>
+                            <option value="bus">bus</option>
+                            <option value="sakafo">sakafo</option>
+                            <option value="sigara">sigara</option>
+                            <option value="gouter">gouter</option>
+                        </select>
+                    </div>
+                    <hr />
+                    <div>
+                        <label htmlFor="cmpt" className='titreChoixCat'>Paiement par :</label>
+                        <select name="" id="cmpt" value={cmpt} onChange={(e) => setCmpt(e.target.value)} >
+                            <option value="portefeuille">Portefeuille</option>
+                            <option value="banque">Banque</option>
+                            <option value="autre">autre</option>
+                        </select>
+                    </div>
+                    <hr />
+                    <div>
+                        <label htmlFor="" className={`titreNombre ${borderColorNombre ? 'redColor':'blueColor'}`}>Nombre</label>
+                        <input type="number" value={Nombre} onChange={(e) => setNombre(e.target.value)} placeholder='Entrer le nombre...'/>
+                    </div>
+                    <hr />
+                    <div>
+                        <label htmlFor="prix" className={`titrePu ${borderColorPU ? 'redColor':'blueColor'}`}>Prix d'un unité</label>
+                        <input type="number" value={PU} onChange={(e) => setPU(e.target.value)} placeholder="Entrer le prix d'un unité..."/>
+                    </div>
+                    <div className='row'>
+                        <button className="btn btn-perso">Annuler</button>
+                        <button className='btn btn-primary' onClick={ajouterElement} >Confirmer</button>
+                    </div>
+                
             </div>
         </div>
     )

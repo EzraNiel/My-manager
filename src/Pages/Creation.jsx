@@ -19,9 +19,6 @@ function Creation() {
     console.log('Identification:', mail);
     console.log('Mot de passe:', motDePasse);
     console.log('Confirmation de mot de pase:', confirmMotDePasse);
-    if(motDePasse !== confirmMotDePasse){
-      alert("diso")
-    }
 // affichage (render)
     setNom('');
     setPrenom('');
@@ -49,7 +46,7 @@ function Creation() {
                 <div className="form-container">
                   <div className="input-row">
                     <div className="input-group-nom">
-                      <input type="text" id="nom"value={nom} onChange={(e) => setNom(e.target.value)} className="nom" placeholder=" " />
+                      <input type="text" id="nom" value={nom} onChange={(e) => setNom(e.target.value)} className="nom" placeholder=" " />
                       <label htmlFor="nom">Nom</label>
                     </div>
                     <div className="input-group-prenom">
