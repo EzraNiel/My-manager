@@ -29,11 +29,11 @@ function CatElement(){
         setListIcon(IconsCopyUptade)
     }
     return(
-        <div className='  '>
+        <div className='contenu'>
             {listIcons.map((val) => (
                  <div className='row catElement mb-4 offset-1' key={val.id}> 
                     <div className='col-md-1 ' >{val.icon}</div>
-                    <div className='col-md-6' ><h5>{val.nom}</h5></div>
+                    <div className='col-md-5' ><h5>{val.nom}</h5></div>
                     <div className='col-md-5'> <button className="boutSUP" onClick={()=>handleDelete(val.id)} ><img className="supprimer" src={cat} alt="" /></button> </div>
                  </div>
             ))}
@@ -58,40 +58,40 @@ function Categories(){
         setEstVisible(!estVisible)
     }
     return(
-        <div>
-             <div className='row mb-3'>
+        <div className='mt-4'>
+             <div className='row mb-2 divcont'>
                 <div className='col-3 offset-1'><button className='btn btn1'>Revenus</button></div>
                 <div className='col-3'><button className='btn btn2'>Dépenses</button></div>
             </div>
             <div className={`divCacher ${estVisible ? 'visible' : 'nonVisible'}`}>
-                {/* <label htmlFor="za">Prenom</label>
-                <input type="text" id='za'/>
-                <label htmlFor="ze">nom</label>
-                <input type="text" id='ze'/> */}
                 <form>
-                <div className="mb-3">
+                <div className="mb-1 formulaire">
                   <div className="header">
-                     <h5 className="modal-title">Effectuer une opération</h5>
-                     <button type="button" className="btn-close">x</button>
+                     <h5 className="modal-title titre">Effectuer une opération</h5>
+                     <hr /> <br />
+                  
                   </div>
-                  <label htmlFor="category-name" className="form-label">Nom de la catégorie:</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="category-name"
-                  /> 
-                  <br />
-                <label htmlFor="category-name" className="form-label">Choisir l'icone:</label>
-                <input
-                    type="text"
-                    className="form-control"
-                    id="category-name"
-                  /> 
-                </div>
+                  <div className='mb-5'>
+                        <label htmlFor="category-name" className="form-label">Nom de la catégorie:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="category-name"
+                        /> 
+                        <br />
+                        <label htmlFor="category-name" className="form-label">Choisir l'icone:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="category-name"
+                        /> 
+                        </div>
+                  </div>
+                 
                 {/* Autres champs du formulaire */}
                 <div className="modal-footer">
                   <button type="button" className="modalAnnuler">Annuler</button>
-                  <button type="submit" className="modalConfirmer">Confirmer</button>
+                  <button type="submit" className="modalConfirmer" >Confirmer</button>
                 </div>
               </form>
             </div>
