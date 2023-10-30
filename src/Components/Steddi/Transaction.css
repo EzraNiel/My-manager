@@ -1,0 +1,287 @@
+.firstDiv{
+    border: 1px 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 1px 1px;
+    border-radius: 5px;
+    width: 70%;
+    height: 275px;
+    transition: 1s;
+}
+.total{
+    text-align: center;
+    margin:20px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px;
+}
+.total h5{
+    font-size: 20px;
+}
+.total h4{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.total2{
+    text-align: center;
+    margin:0px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    
+}
+.equilibre{
+    background-color: rgb(245, 247, 249);
+    /* margin: 0px 0px; */
+    margin-bottom: 10px;
+    height: 165px;
+}
+
+.informations{
+    margin-top: 20px;
+    border: 1px 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 1px 1px;
+    border-radius: 4px;
+    width: 70%;
+    height: 520px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    
+}
+.scrolleo{
+    margin-top: 2px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 490px;
+    overflow: auto;
+    scrollbar-color: rgb(255, 244, 148) rgb(255, 255, 255);
+}
+.scrolleo::-webkit-scrollbar {
+    width: 5px; /* Largeur de la scrollbar */
+}
+.barNavInfo{
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: #ffd86c;
+    height: 40px;
+    box-shadow: 1px 1px 1px;
+}
+.barNavInfo h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Element{
+    border: 0.1px solid grey;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.ElementBar{
+    border: 0px solid grey;
+    margin-left: 0;
+    width: 100%;
+    background-color: rgb(245, 247, 249);
+    box-shadow: 1px 1px 1px;   
+}
+.ElementBar h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.ElementContenu{
+    padding: 2px;
+}
+.ElementContenu h5{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ElementDetails{
+    border: 1px solid grey;
+    margin-left: 0;
+    width: 100%;
+    color: rgb(82, 82, 82);
+    background-color: #fff78b;
+}
+.AjoutElement{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0.5px;
+    background: rgb(255, 255, 255) ;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    display: inline;
+}
+.Revenu {
+    color: green;
+}
+.Revenu1{
+    font-family:'Courier New', Courier, monospace;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.Depense{
+    color: red;
+    
+}
+.Depense1{
+    font-family:'Courier New', Courier, monospace;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -20px
+}
+.supp{
+    padding-top: 2px;
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.iconTotal{
+    width: 40px;
+    height: 35px;
+    margin-left: -5px;
+    overflow: hidden;
+}
+.iconTotal img{
+    width: 100%;
+    height: 100%;
+}
+.TotalLibelle{
+    margin-top: -35px;
+    margin-left: 20px;
+}
+.total2 h5{
+    font-weight: 600;
+    margin-left: 60px;
+    margin-bottom: 25px;
+    margin-top: -30px;
+    width: 100px;
+   
+}
+.iconRevDep{
+    margin-top: 5px;
+    width: 60px;
+    height: 40px;
+    overflow: hidden;
+    
+}
+.iconRevDep img{
+    width: 100%;
+    height: 100%;
+}
+.total3{
+    text-align: center;
+    margin:0px 30px ;
+    height: 60px;
+    border-radius: 5px;
+    
+}
+.Rapport{
+    /* background-color: rgb(247, 23, 23); */
+    padding: 10px;
+    height: 100%;
+    transition: 0.5s;
+    
+}
+.imgRapportRevenu1{
+    margin-top: 10px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu1 img{
+    width: 100%;
+}
+.imgRapportRevenu2{
+    margin-top: -15px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu2 img{
+    width: 100%;
+}
+.imgRapportRevenu3{
+    margin-top: -3px;
+    width: 800px;
+    overflow: hidden;
+}
+.imgRapportRevenu3 img{
+    width: 100%;
+}
+.dep2{
+    margin-top: 0px;
+}
+.dep3{
+    margin-top: 0px;
+}
+.btnRevenu, .btnDepense{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 398px;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 1px grey;
+}
+.btnDepense{
+    margin-left: 2px;
+}
+.btnRevenu:hover, .btnDepense:hover{
+    color: #EEB000;
+    box-shadow: 1px 2px 1px #EEB000;
+    
+    font-size:20px;
+}
+
+.AjoutElement button{
+    width: 40%;
+    margin: 5px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.btn-perso{
+    border-color: #EEB000;
+}
+.ElementContenu2{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+#catValId{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.titreChoixCat, .selectClass option,.titreNombre,.titrePu{
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.selectClass{
+    width: 250px;
+}
+.redBorder{
+    border-color: red !important;
+    box-shadow: none !important;
+}
+.noRed{
+    background-color: #EEB000;
+}
+.redColor{
+    color: red;
+    font-weight: bold;
+}
+.blueColor{
+    color: black;
+}

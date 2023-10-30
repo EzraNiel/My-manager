@@ -1,0 +1,266 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  max-width: 63%;
+  max-height: auto;
+  background-color: #FFE600;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 1px 2px 3px rgb(134, 123, 123);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.content-left,
+.content-right {
+  flex-basis: 35%;
+  padding: 20px;
+  height: 100%;
+}
+
+.content-left {
+  position: relative;
+  overflow: visible;
+  background-color: #FFE600;
+  z-index: 1;
+}
+
+div.img {
+  width: 300px; 
+  height: 300px; 
+  position: absolute;
+  top: -10px; 
+  left: -10px;
+  overflow: hidden;
+  left:20%;
+  top: 30%;
+}
+img{
+  width: 100%; 
+  height: 100%;
+  
+}
+
+.content-right {
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 65%;
+  border-radius: 100px 0 0 100px ;
+}
+
+.container-right {
+  position: absolute;
+  max-width: 95%;
+  z-index: 0; 
+}
+
+.content-right h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 1px rgb(51, 51, 51);
+}
+.content-left h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: bell mt;
+}
+
+.content-left p {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group-nom,
+.input-group-prenom,
+.input-group-mail,
+.input-group-mdp,
+.input-group-ConfirmMdp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.input-group-mail,
+.input-group-mdp,
+.input-group-ConfirmMdp{
+  width: 105%;
+}
+.input-group-nom input,
+.input-group-prenom input{
+  width: 98%;
+}
+.input-group-nom input,
+.input-group-prenom input,
+.input-group-mail input,
+.input-group-mdp input,
+.input-group-ConfirmMdp input ,
+.creer
+{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 35px;
+  
+}
+.creer{
+  width: 100px;
+}
+.input-group-mail input,
+.input-group-mdp input,
+.input-group-ConfirmMdp input{
+  width: 90%;
+}
+
+.label-input {
+  font-size: 14px;
+  color: #666;
+}
+
+p {
+  font-size: 17px;
+  color: #332f2f;
+  text-align: center;
+  font-family: bell mt;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.short {
+  width: 30px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.input-group-nom {
+  flex: 1; 
+}
+
+.input-group-prenom {
+  flex: 1; 
+  margin-left: 20px;
+}
+
+
+.input-group-nom, .input-group-prenom, .input-group-mail, .input-group-mdp,.input-group-ConfirmMdp,.creer,.connexion
+{
+  position: relative;
+  margin:15px 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+.connexion, .creer {
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+height: 20px;
+width: 95%;
+}
+input + label {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: 0.75rem;
+color: #141414;
+padding: 0 0.125rem;
+transition: 0.400s;
+font-size: 12px;
+}
+
+input:focus {
+outline: none;
+border: 1px solid black;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+top: 0;
+transition: 0.3s;
+background-color: #fff;
+color: #313030;
+border-radius: 1px;
+}
+.line-container{
+  display: flex;
+  align-items: center;
+}
+.line{
+  flex: 1;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+  margin: 0 10px;
+  
+}
+.short{
+  width: 32px;
+}
+
+button.creer, button.connexion{
+ background-color: #FFE600;
+ height: 35px;
+ font-size: 14px;
+ font-family: arial;
+ 
+}
+button.creer:hover, button.connexion:hover{
+  box-shadow: 1px 2px 3px grey;
+  background-color: #f5dd08;
+} 
+
+input:hover{
+  box-shadow: 1px 2px 3px grey;
+}
+.cercle1{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FFE600;
+  transform: translate(270%, -290%); 
+}
+.cercle2{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFE600;
+  transform: translate(200%, -430%); 
+}
+

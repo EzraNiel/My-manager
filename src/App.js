@@ -5,6 +5,7 @@ import Contact from "./Pages/Contact";
 import Creation from "./Pages/Creation";
 import Connexion from "./Pages/Connexion";
 import Compte from "./Pages/Compte";
+import Defilement from "./Components/Ezra/Defilement";
 
 function App() {
   // State
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Creation" element={<Creation></Creation>} />
           <Route path="/Connexion" element={<Connexion></Connexion>} />
           <Route path="/Compte" element={<Compte></Compte>} />
+          <Route path="/Defilement" element={<Defilement></Defilement>} />
         </Routes>
       </BrowserRouter>
     </div>

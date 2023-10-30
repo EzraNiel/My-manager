@@ -1,0 +1,24 @@
+.btn_style {
+  margin: 10px;
+}
+.hover-effect-3 {
+  position: relative;
+  padding: 0.5rem 0;
+  margin: 5px;
+}
+
+.hover-effect-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.5s ease-in-out;
+  height: 2px;
+  width: 100%;
+  background-color: #00a2ff;
+}
+
+.hover-effect-3:hover::before {
+  transform: translateX(-50%) scale(1);
+}
