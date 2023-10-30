@@ -83,7 +83,7 @@ function Transaction(){
         {id: 3, nom:"Frais", val: 500}
     ])
     const calculVal= (a,b)=>{
-        return a*b
+        return a*b 
     }
     const handleDelete= (id)=>{
         const testCopy= [... test]
@@ -91,7 +91,7 @@ function Transaction(){
         setTest(testCopyUpdate)
         // console.log("mandeh eh")
     }
-    const testnature= (a)=>{
+    const testnature= (a) => {
         let nature='Revenu'
         if(a<0){
             nature='Depense'
@@ -185,7 +185,7 @@ function Transaction(){
                                     <li key={cat.id} className='row'>
                                         <div className='col-8 ElementContenu2'>{cat.nom}</div>
                                         <div className='col-2'><h5 className={testnature(cat.val)} id="catValId" >{cat.val}</h5></div>
-                                        <img src={suppr} className='supp' onClick={()=>handleDelete(cat.id)}></img> 
+                                        <img src={suppr} className='supp' alt='' onClick={()=>handleDelete(cat.id)}></img> 
                                     </li>
                                 ))}
                             </ul>

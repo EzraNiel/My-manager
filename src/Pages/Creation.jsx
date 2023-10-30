@@ -76,9 +76,9 @@ function Creation() {
                     <hr className="line short" />
                   </div>
                   
-                  <Link to="/Connexion">
+                  {/* <Link to="/Connexion"> */}
                     <button className="connexion">Connecter</button>
-                  </Link>
+                  {/* </Link> */}
                  
                 </div>
               </form>
