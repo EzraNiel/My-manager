@@ -6,10 +6,11 @@ const utilisateurSchema = new mongoose.Schema({
   nom_utili: String,
   prenom_utili: String,
   motDePass_utili: String,
-  id_admin: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: Admin,
-  },
+  mail_utili : String,
+  // id_admin: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: Admin,
+  // },
 });
 
 // Création du modèle
