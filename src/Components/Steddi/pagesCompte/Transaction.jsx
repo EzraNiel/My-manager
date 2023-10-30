@@ -185,7 +185,7 @@ function Transaction(){
                                     <li key={cat.id} className='row'>
                                         <div className='col-8 ElementContenu2'>{cat.nom}</div>
                                         <div className='col-2'><h5 className={testnature(cat.val)} id="catValId" >{cat.val}</h5></div>
-                                        <img src={suppr} className='supp' onClick={()=>handleDelete(cat.id)}></img> 
+                                        <img src={suppr} className='supp' alt='' onClick={()=>handleDelete(cat.id)}></img> 
                                     </li>
                                 ))}
                             </ul>
