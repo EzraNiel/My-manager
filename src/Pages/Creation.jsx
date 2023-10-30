@@ -14,20 +14,31 @@ function Creation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://127.0.0.1:2023/utilisateurs',{nom_utili, prenom_utili, motDePass_utili ,mail_utili})
-    .then(result => console.log(result))
-    .catch(err => console.log(err))
+    if((nom_utili !=='') && prenom_utili !=='' && motDePass_utili !=='' && mail_utili !==''){
+      if(motDePass_utili === confirmMotDePasse){
+        axios.post('http://127.0.0.1:2023/utilisateurs',{nom_utili, prenom_utili, motDePass_utili ,mail_utili})
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
+        setNom('');
+        setPrenom('');
+        setMail('');
+        setMotDePasse('');
+        setconfirmMotDePasse('');
+      }else{
+        alert("Steddi be")
+      }
+      
+    }else{
+      console.log("TSIARO be tay  ehhhhhhhhhh"); 
+    }
 //     console.log('Nom:', nom);
 //     console.log('Prénom:', prenom);
 //     console.log('Identification:', mail);
 //     console.log('Mot de passe:', motDePasse);
 //     console.log('Confirmation de mot de pase:', confirmMotDePasse);
+
 // affichage (render)
-    setNom('');
-    setPrenom('');
-    setMail('');
-    setMotDePasse('');
-    setconfirmMotDePasse('');
+   
   };
   return (
     <>
