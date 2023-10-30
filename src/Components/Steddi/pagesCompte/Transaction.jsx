@@ -86,7 +86,7 @@ function Transaction(){
         return a*b 
     }
     const handleDelete= (id)=>{
-        const testCopy= [... test]
+        const testCopy= [...test]
         const testCopyUpdate= testCopy.filter((cat)=> cat.id !== id)
         setTest(testCopyUpdate)
         // console.log("mandeh eh")
