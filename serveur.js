@@ -9,6 +9,7 @@ const Compte = require("./backend/src/models/Comptes");
 const Depense = require("./backend/src/models/Depenses");
 const Revenue = require("./backend/src/models/Revenues");
 const Utilisateur = require("./backend/src/models/Utilisateurs");
+const { async } = require("q");
 
 // Connexion à la base de données
 const mongoURI = "mongodb://127.0.0.1:27017/myManagerDB"; // URL de connexion
