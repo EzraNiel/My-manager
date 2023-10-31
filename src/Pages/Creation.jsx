@@ -15,7 +15,7 @@ function Creation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if((nom_utili !=='') && prenom_utili !=='' && motDePass_utili !=='' && mail_utili !==''){
-      if(motDePass_utili === confirmMotDePasse){
+      if(motDePass_utili === confirmMotDePasse && motDePass_utili.length >=4){
         axios.post('http://127.0.0.1:2023/utilisateurs',{nom_utili, prenom_utili, motDePass_utili ,mail_utili})
         .then(result => console.log(result))
         .catch(err => console.log(err))
@@ -82,7 +82,7 @@ function Creation() {
                   {/* <Link to="/"> */}
                     <button className="creer" type="submit">Créer</button>
                   {/* </Link>                   */}
-                  <p>Le mot de passe doit contenir au moins 8 caractères</p>
+                  <p>Le mot de passe doit contenir au moins 4 caractères</p>
                   <div className="line-container">
                     <hr className="line short" />
                     <span>ou</span>

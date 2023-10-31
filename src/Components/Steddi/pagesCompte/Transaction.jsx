@@ -225,9 +225,9 @@ function Transaction(){
                                 Details
                             </button>
                     </div>
-                    {ancien(2500,'Cadeau',-30,'taxi')}
+                    {/* {ancien(2500,'Cadeau',-30,'taxi')}
                     {ancien(-26,'Sakafo',-50,'sigara')}
-                    {ancien(-256,'Frais',-50,'sigara')}
+                    {ancien(-256,'Frais',-50,'sigara')} */}
                 </div>
             </div>
             <div className={`AjoutElement ${borderColor ? 'redBorder' : 'noRed' }`}>

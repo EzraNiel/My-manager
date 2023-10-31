@@ -21,6 +21,16 @@ function Compte() {
   const handleButtonClick= function(affichage){
     setDisplay(affichage)
   }
+
+  const [affichena, setAffichena]= useState(false)
+  const afficheo=()=>{
+    setAffichena(!affichena)
+  }
+  const soldeDiv= <div className="nouv">
+    <input type="number" placeholder="Soldes_portefeuille" className="portefeuille" />
+    <input type="number" placeholder="soldes_banques" className="banques"/>  
+    <button className="valide">Valider</button>
+  </div> 
   //   AFFICHAGE (RENDER)
   return (
     <div className="fond">
@@ -32,12 +42,14 @@ function Compte() {
           <div></div>
         </div>
         <ul className="listUl">
-          <li><Link to="/"><div className="list">Acceuil</div></Link></li>
-          <li><Link to="/Apropos"><div className="list">A propos</div></Link></li>
-          <li><Link to="/Contact"><div className="list">Contacts</div></Link></li>
-          <li><Link to="/Creation"><div className="list">Créer un compte</div></Link></li>
-          <li><Link to="/Connexion"><div className="list">Deconnexion</div></Link></li>
+          <li><Link to="/" id="lien"><div className="list">Acceuil</div></Link></li>
+          <li><Link to="/Apropos" id="lien"><div className="list">A propos</div></Link></li>
+          <li><Link to="/Contact" id="lien"><div className="list">Contacts</div></Link></li>
+          <li><Link to="/Creation" id="lien"><div className="list">Créer un compte</div></Link></li>
+          <li><Link to="/Connexion" id="lien"><div className="list">Deconnexion</div></Link></li>
+          <li><div className="list" onClick={afficheo}>Mes soldes</div></li>
         </ul>
+        {affichena===true && soldeDiv}
       </div>
       <div className="content">
         <div className="navContent row">
