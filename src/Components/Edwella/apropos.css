@@ -3,7 +3,7 @@
     padding: 0;
 }
 .Para p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
     width: 70%;
     height: 80%;
@@ -12,6 +12,6 @@
 }
 .Para{
     position: relative;
-    top: 80px;
+    top: 30px;
     left: 15%;
 }
