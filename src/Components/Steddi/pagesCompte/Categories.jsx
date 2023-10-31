@@ -128,6 +128,13 @@ function Categories(){
                             id="category-name"
                         /> 
                         <br />
+                        <label htmlFor="category-name" className="form-label">Nature de la catégorie:</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="category-name"
+                        /> 
+                        <br />
                         <label htmlFor="category-name" className="form-label">Choisir l'icone:</label>
                         <input
                             type="text"

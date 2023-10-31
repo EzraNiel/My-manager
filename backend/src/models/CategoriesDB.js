@@ -5,10 +5,10 @@ const Compte = require("./Comptes");
 const categorieSchema = new mongoose.Schema({
   nom_cat: String,
   nature_cat: String,
-  id_compte: {
+  /*id_compte: {
     type: mongoose.Schema.Types.ObjectId,
     ref: Compte,
-  },
+  },*/
 });
 
 // Création du modèle

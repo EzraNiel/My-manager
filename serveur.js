@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 // Importation des modèles Mongoose
 const Admin = require("./backend/src/models/Admins");
-const Categorie = require("./backend/src/models/Categories");
+const Categorie = require("./backend/src/models/CategoriesDB");
 const Compte = require("./backend/src/models/Comptes");
 const Depense = require("./backend/src/models/Depenses");
 const Revenue = require("./backend/src/models/Revenues");
@@ -43,6 +43,7 @@ db.once("open", () => {
 // Route pour gérer l'authentification
 app.post("/api/login", authController.login);
 
+//Formulaire d'enregistrement (inscription)
 app.post("/utilisateurs", (req, res) => {
   const { nom_utili, prenom_utili, motDePass_utili, mail_utili } = req.body;
   Utilisateur.findOne({ nom_utili })

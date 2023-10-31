@@ -64,11 +64,11 @@ function ancien(val,libelle,val1,libelle1){
 function Transaction(){
 
     // Les valeurs qui changent aucours du temps
-    const [ValPortefeuille, setVP]=useState("10.000.000$")
-    const [ValBanque, setVB]= useState("30.000.000$")
-    const [ValRevenus, setVR]= useState("300.000$")
-    const [ValDepenses, setVD]= useState("150.000$")
-    const [ValEquilibre, setVE]= useState("150.000$")
+    const [ValPortefeuille, setVP]=useState(10000000)
+    const [ValBanque, setVB]= useState(30000000)
+    const [ValRevenus, setVR]= useState(300000)
+    const [ValDepenses, setVD]= useState(150000)
+    const [ValEquilibre, setVE]= useState(150000)
     const [cat, setCatValue]=useState("sakafo")
     const [cmpt, setCmpt]= useState("portefeuille")
     const [Nombre, setNombre]= useState('')
@@ -77,6 +77,27 @@ function Transaction(){
     const [borderColorNombre, setBorderNombre]= useState(false)
     const [borderColorPU, setBorderPU]= useState(false)
 
+    //Les categories depense et revenu et nature
+    const [catDep, setCatDep]=([])
+    const [catRev, setCatRev]=([])
+    
+
+
+    //fonction test nature de cat
+    const natureCat=''
+    const testCat= (a,b,c)=>{
+        b.map((d=>{
+            if(a===d){
+                natureCat= 'Revenu'
+            }
+        }));
+        c.map((d=>{
+            if(a===d){
+                natureCat= 'Depense'
+            }
+        }));
+    }
+    //Etat pour la date de maintenant
     const [test, setTest]= useState([
         {id: 1, nom:"sakafo", val: 1500},
         {id: 2, nom:"Gouter", val: 3400},
@@ -92,6 +113,7 @@ function Transaction(){
         // console.log("mandeh eh")
     }
     const testnature= (a) => {
+        
         let nature='Revenu'
         if(a<0){
             nature='Depense'
@@ -100,9 +122,20 @@ function Transaction(){
     }
     let valTotal1=0
     let valTotal2=0
+
+    //ajout d'un nouveau depense ou revenu
     const ajouterElement = () => {
         setBorderNombre(false)
         setBorderPU(false)
+
+        //Interagir avec le solde portefeuille ou banque
+        if(cmpt==='banque'){
+            setVB(e=>e-(Nombre*PU))
+        }
+        if(cmpt==='portefeuille'){
+            setVP(e=>e-(Nombre*PU))
+        }
+
         // Créez le nouvel élément que vous souhaitez ajouter
         if(Nombre !==0 && PU !== '' && Nombre !=='' && PU !== 0){
         const nouvelElement = { id: test.length + 1, nom: cat, val: calculVal(Nombre,PU) };
@@ -115,8 +148,7 @@ function Transaction(){
         setBorderPU(false)
        }
        else {
-            
-            setBorder(!borderColor)
+            setBorder(!borderColor) 
             if((Nombre === 0) || (Nombre===''))
                 setBorderNombre(true)
             if(PU ==='' || PU === 0)

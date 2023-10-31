@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Categorie = require("./Categories");
+const Categorie = require("./CategoriesDB");
 
 // Définition du schéma
 const depenseSchema = new mongoose.Schema({
