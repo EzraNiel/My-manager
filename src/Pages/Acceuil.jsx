@@ -26,7 +26,9 @@ function Acceuil() {
           </p>
           <br />
           <p>
+
             <Link role="button" className="btn btn-warning btn-lg" to="/Defilement">
+
               Détails
             </Link>
           </p>
