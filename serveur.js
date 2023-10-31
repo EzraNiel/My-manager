@@ -43,6 +43,7 @@ db.once("open", () => {
 // Route pour gérer l'authentification
 app.post("/api/login", authController.login);
 
+//Formulaire d'enregistrement (inscription)
 app.post("/utilisateurs", (req, res) => {
   const { nom_utili, prenom_utili, motDePass_utili, mail_utili } = req.body;
   Utilisateur.findOne({ nom_utili })
@@ -55,6 +56,26 @@ app.post("/utilisateurs", (req, res) => {
           prenom_utili: prenom_utili,
           motDePass_utili: motDePass_utili,
           mail_utili: mail_utili,
+        })
+          .then((result) => res.json(result))
+          .catch((err) => res.json(err));
+      }
+    })
+    .catch((err) => res.json(err));
+});
+
+//ajout new categorie dans BD
+app.post("/categories", (req, res) => {
+  const { nom_cat, nature_cat, icon_cat } = req.body;
+  Categorie.findOne({ nom_cat })
+    .then((user) => {
+      if (user) {
+        res.json("Categorie deja existant!");
+      } else {
+        Categorie.create({
+          nom_cat: nom_cat,
+          nature_cat: nature_cat,
+          icon_cat: icon_cat,
         })
           .then((result) => res.json(result))
           .catch((err) => res.json(err));
