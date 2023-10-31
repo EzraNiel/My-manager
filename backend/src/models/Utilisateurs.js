@@ -6,7 +6,7 @@ const utilisateurSchema = new mongoose.Schema({
   nom_utili: String,
   prenom_utili: String,
   motDePass_utili: String,
-  mail_utili : String,
+  mail_utili: String,
   // id_admin: {
   //   type: mongoose.Schema.Types.ObjectId,
   //   ref: Admin,
