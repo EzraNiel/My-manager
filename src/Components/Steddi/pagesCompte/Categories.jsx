@@ -129,18 +129,19 @@ function Categories(){
                         /> 
                         <br />
                         <label htmlFor="category-name" className="form-label">Nature de la catégorie:</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="category-name"
-                        /> 
+                        <select name="" id="" className='natCat'>
+                            <option value="Revenu">Revenu</option>
+                            <option value="Depense">Depense</option>
+                        </select> 
+                        <br />
                         <br />
                         <label htmlFor="category-name" className="form-label">Choisir l'icone:</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="category-name"
-                        /> 
+                        <select name="" id="" className='natCat'>
+                            <option value="Revenu">Sakafo</option>
+                            <option value="Depense">Sigara</option>
+                            <option value="Depense">Transport</option>
+                            <option value="Depense">Zavatra</option>
+                        </select> 
                         </div>
                   </div>
                  
