@@ -83,15 +83,15 @@ function Transaction(){
         {id: 3, nom:"Frais", val: 500}
     ])
     const calculVal= (a,b)=>{
-        return a*b
+        return a*b 
     }
     const handleDelete= (id)=>{
-        const testCopy= [... test]
+        const testCopy= [...test]
         const testCopyUpdate= testCopy.filter((cat)=> cat.id !== id)
         setTest(testCopyUpdate)
         // console.log("mandeh eh")
     }
-    const testnature= (a)=>{
+    const testnature= (a) => {
         let nature='Revenu'
         if(a<0){
             nature='Depense'

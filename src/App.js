@@ -21,8 +21,8 @@ function App() {
           <Route path="/Apropos" element={<Apropos></Apropos>} />
           <Route path="/Contact" element={<Contact></Contact>} />
           <Route path="/Creation" element={<Creation></Creation>} />
-          <Route path="/Connexion" element={<Connexion></Connexion>} />
           <Route path="/Compte" element={<Compte></Compte>} />
+          <Route path="/Connexion" element={<Connexion></Connexion>} />
           <Route path="/Defilement" element={<Defilement></Defilement>} />
         </Routes>
       </BrowserRouter>
