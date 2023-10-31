@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 // Importation des modèles Mongoose
 const Admin = require("./backend/src/models/Admins");
-const Categorie = require("./backend/src/models/CategoriesDB");
+const Categorie = require("./backend/src/models/Categories");
 const Compte = require("./backend/src/models/Comptes");
 const Depense = require("./backend/src/models/Depenses");
 const Revenue = require("./backend/src/models/Revenues");
@@ -56,6 +56,26 @@ app.post("/utilisateurs", (req, res) => {
           prenom_utili: prenom_utili,
           motDePass_utili: motDePass_utili,
           mail_utili: mail_utili,
+        })
+          .then((result) => res.json(result))
+          .catch((err) => res.json(err));
+      }
+    })
+    .catch((err) => res.json(err));
+});
+
+//ajout new categorie dans BD
+app.post("/categories", (req, res) => {
+  const { nom_cat, nature_cat, icon_cat } = req.body;
+  Categorie.findOne({ nom_cat })
+    .then((user) => {
+      if (user) {
+        res.json("Categorie deja existant!");
+      } else {
+        Categorie.create({
+          nom_cat: nom_cat,
+          nature_cat: nature_cat,
+          icon_cat: icon_cat,
         })
           .then((result) => res.json(result))
           .catch((err) => res.json(err));

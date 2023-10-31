@@ -10,6 +10,7 @@ import i3 from '../iconSte/icon/restaurant-vegetarien.png'
 import i4 from '../iconSte/icon/crayon.png'
 import i5 from '../iconSte/icon/bagages-de-voyage.png'
 import i6 from '../iconSte/icon/project-management.png'
+import axios from 'axios'
 // import i7 from '../iconSte/icon/cancel.png'
 // import ModalForm from './Modal';
 function CatElement(){
@@ -53,6 +54,10 @@ function Categories(){
 //   const closeModal = () => {
 //     setShowModal(false);
 //   };
+    const [icon_cat, setIcon_cat]=useState('')
+    const [nature_cat, setNature_cat]=useState('')
+    const [nom_cat, setNom_cat]=useState('')
+
     const [listIcons, setListIcon] = useState([
         {id:1, icon:<img className="i1" src={i1} alt=""/>, nom:"Sakafo"},
         {id:2, icon:<img className="i2" src={i2} alt=""/>, nom:"Transport"},
@@ -88,6 +93,19 @@ function Categories(){
     const ajouter= ()=>{
         setEstVisible(!estVisible)
     }
+
+    //Ajout de nouvelle categorie
+    const handleSubmit= (e)=>{
+        e.preventDefault();
+        if(nom_cat!=='' && nature_cat!=='' && icon_cat!==''){
+            axios.post('http://127.0.0.1:2023/categories',{nom_cat, nature_cat, icon_cat})
+            .then(result => console.log(result))
+            .catch(err => console.log(err))
+            setNom_cat('')
+        }else{
+            alert("zavatra kely be")
+        }
+    }
     const revenuAff= <div className='contenu'>
             {listIconsdep.map((val) => (
                 <div className='row catElement mb-4 offset-1' key={val.id}> 
@@ -113,7 +131,7 @@ function Categories(){
                 <div className='col-3'><button className='btn btn2' onClick={()=> setDisplayeo('affichage2')}>Dépenses</button></div>
             </div>
             <div className={`divCacher ${estVisible ? 'visible' : 'nonVisible'}`}>
-                <form>
+                <form action="submit" onSubmit={handleSubmit}>
                 <div className="mb-1 formulaire">
                   <div className="header">
                      <h5 className="modal-title titre">Effectuer une opération</h5>
@@ -126,21 +144,23 @@ function Categories(){
                             type="text"
                             className="form-control"
                             id="category-name"
+                            value={nom_cat}
+                            onChange={(e)=> setNom_cat(e.target.value)}
                         /> 
                         <br />
                         <label htmlFor="category-name" className="form-label">Nature de la catégorie:</label>
-                        <select name="" id="" className='natCat'>
+                        <select name="" id="" className='natCat' value={nature_cat} onChange={(e) => setNature_cat(e.target.value)}>
                             <option value="Revenu">Revenu</option>
                             <option value="Depense">Depense</option>
                         </select> 
                         <br />
                         <br />
                         <label htmlFor="category-name" className="form-label">Choisir l'icone:</label>
-                        <select name="" id="" className='natCat'>
-                            <option value="Revenu">Sakafo</option>
-                            <option value="Depense">Sigara</option>
-                            <option value="Depense">Transport</option>
-                            <option value="Depense">Zavatra</option>
+                        <select name="" id="" value={icon_cat} onChange={(e) => setIcon_cat(e.target.value)} className='natCat'>
+                            <option value="sakafo">Sakafo</option>
+                            <option value="sigara">Sigara</option>
+                            <option value="transport">Transport</option>
+                            <option value="zavatra">Zavatra</option>
                         </select> 
                         </div>
                   </div>
@@ -148,7 +168,7 @@ function Categories(){
                 {/* Autres champs du formulaire */}
                 <div className="modal-footer">
                   <button type="button" className="modalAnnuler">Annuler</button>
-                  <button type="submit" className="modalConfirmer" >Confirmer</button>
+                  <button type="submit" className="modalConfirmer">Confirmer</button>
                 </div>
               </form>
             </div>

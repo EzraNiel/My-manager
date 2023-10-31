@@ -78,8 +78,8 @@ function Transaction(){
     const [borderColorPU, setBorderPU]= useState(false)
 
     //Les categories depense et revenu et nature
-    const [catDep, setCatDep]=([])
-    const [catRev, setCatRev]=([])
+    const [catDep, setCatDep]=useState([])
+    const [catRev, setCatRev]=useState([])
     
 
 
