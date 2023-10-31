@@ -1,5 +1,6 @@
 .btn_style {
   margin: 10px;
+  border-radius: 8px !important;
 }
 .hover-effect-3 {
   position: relative;
@@ -21,4 +22,7 @@
 
 .hover-effect-3:hover::before {
   transform: translateX(-50%) scale(1);
+}
+.justify-content-end{
+  transform: translate(-120px, 0);
 }

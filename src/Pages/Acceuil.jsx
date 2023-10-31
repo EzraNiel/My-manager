@@ -10,7 +10,7 @@ function Acceuil() {
       <BarDeNavigation></BarDeNavigation>
       <div className="grid-container">
         <div className="containt">
-          <h1>Bonjour cher visiteur </h1>
+          <h1 className="h1_ambony">Bonjour cher visiteur </h1>
           <br />
           <p>
             Ceci est la toute première version de{" "}
@@ -31,13 +31,13 @@ function Acceuil() {
             </Link>
           </p>
           <br />
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-3 tts">
             <Form.Control
               placeholder="Enter your mail ..."
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <Button variant="outline-primary" id="button-addon2">
+            <Button variant="outline-primary" id="button-addon2" className="tst">
               Sign Up
             </Button>
           </InputGroup>
