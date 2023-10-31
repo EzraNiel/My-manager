@@ -6,11 +6,24 @@ span {
 .text_my_manager {
   color: black;
 }
+.tts{
+  width: 110% !important;
+  transform: translate(-10px, -17px);
+}
+.tst{
+  transform: translate(10px ,0);
+  height: 38px !important;
+  border-radius: 5px !important;
+  width: 150px !important;
+} 
+
+
 h4 {
   color: #ffc107;
 }
 
-h1 {
+.h1_ambony {
+  width: 400px;
   color: #00a2ff;
   /* color: rgb(25, 155, 155); */
 }
