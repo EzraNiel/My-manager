@@ -69,6 +69,8 @@ function Categories(){
         {id:4, icon:<img className="i4" src={i4} alt=""/>, nom:"Sigara"},
         {id:5, icon:<img className="i5" src={i5} alt=""/>, nom:"Voyage"},
         {id:6, icon:<img className="i6" src={i6} alt=""/>, nom:"Besoins"},
+        {id:7, icon:<img className="i6" src={i6} alt=""/>, nom:"Besoins"},
+        {id:8, icon:<img className="i6" src={i6} alt=""/>, nom:"Besoins"},
         
     ])
     const [displayeo,setDisplayeo]= useState('affichage1')
