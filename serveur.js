@@ -12,6 +12,9 @@ const Depense = require("./backend/src/models/Depenses");
 const Revenue = require("./backend/src/models/Revenues");
 const Utilisateur = require("./backend/src/models/Utilisateurs");
 
+
+const { async } = require("q");
+
 // Importation des contrôleurs
 const adminController = require("./backend/src/controllers/adminController");
 const categorieController = require("./backend/src/controllers/categorieController");
@@ -20,6 +23,7 @@ const depenseController = require("./backend/src/controllers/depenseController")
 const revenueController = require("./backend/src/controllers/revenueController");
 const utilisateurController = require("./backend/src/controllers/utilisateurController");
 const authController = require("./backend/src/controllers/authController");
+
 
 // Connexion à la base de données
 const mongoURI = "mongodb://127.0.0.1:27017/myManagerDB"; // URL de connexion

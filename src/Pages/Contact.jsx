@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import '../Components/Edwella/contact.css';
-import logo from '../Components/Edwella/Capture d’écran 2023-10-23 115608.jpg'
+import logo from '../Components/Edwella/cpt.jpg'
 import phone from '../Components/Edwella/Phone.png'
 import mail from '../Components/Edwella/Mail.png'
 import fb from '../Components/Edwella/Fb1.png'
@@ -15,7 +15,7 @@ function Contact() {
 
   //   AFFICHAGE (RENDER)
   return (
-    <>
+
     <div className="Contact">
       <div className="head">
       <img  className="PictLogo"  src={logo} alt="logo"></img>
@@ -31,23 +31,23 @@ function Contact() {
           <li id="phone">
             <img src={phone}></img>
             <h3>Téléphone</h3>
-            <text>+03.......</text>
+            <p>+03.......</p>
           </li>
           <li id="mail">
             <img src={mail}></img>
             <h3>Mail</h3>
-            <text>MyManager@bmail.com</text>
+            <p>MyManager@bmail.com</p>
           </li>
           <li id="fb"> <img src=""></img>
             <img src={fb}></img>
             <h3>Facebook</h3>
-            <text>My-Manager</text>
+            <p>My-Manager</p>
           </li>
         </ul>
       </div>
      
     </div>
-    </>
+
   );
 }
 
