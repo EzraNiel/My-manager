@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
+import {Icone} from '../Edwella/Page3.png';
 
 function PremierPage(){
     return(
         <>
         <div className="Page-1">   
             <div className="div-1">
-                <img className="Icone"></img>
+                <img className="Icone" src={Icone}></img>
             </div>
             <div className="div-2">
-                <h1 className="Head-1">Commençons!</h1>
-                <p className="Description">Suivez vos revenus,enregistrez vos dépenses,consultez des graphes visuels de vos habitudes de dépense et prenez le controle de votre argent</p>
-                <Link to={}></Link>
-                <Link to={}></Link>
+                <Link to={/SecondPage}>Faire mon premier pas</Link>
+                <Link to={/Acceuil}>Pas maintenant</Link>
             </div>
         </div>
         </>

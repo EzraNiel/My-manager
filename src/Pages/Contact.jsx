@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import '../Components/Edwella/contact.css';
-import logo from '../Components/Edwella/Capture d’écran 2023-10-23 115608.jpg'
-import phone from '../Components/Edwella/Phone.png'
-import mail from '../Components/Edwella/Mail.png'
-import fb from '../Components/Edwella/Fb1.png'
-import mess from '../Components/Edwella/Message.png'
+import logo from '../Components/Edwella/Capture d’écran 2023-10-23 115608.jpg';
+import Cont from '../Components/Edwella/Contact.png';
 
 
 
@@ -27,23 +24,7 @@ function Contact() {
       </div>
       <h2>Veuillez nous contacter!</h2>
       <div className="Section">
-        <ul>
-          <li id="phone">
-            <img src={phone}></img>
-            <h3>Téléphone</h3>
-            <text>+03.......</text>
-          </li>
-          <li id="mail">
-            <img src={mail}></img>
-            <h3>Mail</h3>
-            <text>MyManager@bmail.com</text>
-          </li>
-          <li id="fb"> <img src=""></img>
-            <img src={fb}></img>
-            <h3>Facebook</h3>
-            <text>My-Manager</text>
-          </li>
-        </ul>
+        <img src={Cont}></img>
       </div>
      
     </div>
