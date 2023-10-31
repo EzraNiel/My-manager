@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from '../Components/Edwella/Capture d’écran 2023-10-23 115608.jpg'
+import logo from '../Components/Edwella/cpt.jpg'
 import '../Components/Edwella/apropos.css';
 
 function Apropos() {

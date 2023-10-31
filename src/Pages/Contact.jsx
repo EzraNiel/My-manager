@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import '../Components/Edwella/contact.css';
-import logo from '../Components/Edwella/Capture d’écran 2023-10-23 115608.jpg';
+
 import Cont from '../Components/Edwella/Contact.png';
+
+import logo from '../Components/Edwella/cpt.jpg'
+// import phone from '../Components/Edwella/Phone.png'
+// import mail from '../Components/Edwella/Mail.png'
+// import fb from '../Components/Edwella/Fb1.png'
+// import mess from '../Components/Edwella/Message.png'
+
 
 
 
@@ -12,7 +19,7 @@ function Contact() {
 
   //   AFFICHAGE (RENDER)
   return (
-    <>
+
     <div className="Contact">
       <div className="head">
       <img  className="PictLogo"  src={logo} alt="logo"></img>
@@ -24,11 +31,12 @@ function Contact() {
       </div>
       <h2>Veuillez nous contacter!</h2>
       <div className="Section">
-        <img src={Cont}></img>
+      <img src={Cont}></img>
+
       </div>
      
     </div>
-    </>
+
   );
 }
 

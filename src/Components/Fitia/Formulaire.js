@@ -55,7 +55,7 @@ export function Formulaire() {
                     className="effect-3"
                     placeholder="Entrer votre email...."
                   />
-                  <span class="border"></span>
+                  <span className="border"></span>
                 </div>
                 <div className="input-group mb-5">
                   <input
@@ -67,7 +67,7 @@ export function Formulaire() {
                     className="effect-3"
                     placeholder="Saisir votre mot de passe...."
                   />
-                  <span class="border"></span>
+                  <span className="border"></span>
                 </div>
 
                 <Link to="/Compte" className="mb-3">
